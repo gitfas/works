@@ -1,0 +1,1035 @@
+amsn_lang_version 2
+abort Abort
+about aMSNについて
+aboutamsn aMSNメッセンジャーについて
+accept 承認
+acceptfile $3 に $2 のファイル $1 を受信しますか？
+account アカウント
+actions 操作
+activeautoupdate Activate auto-update
+addacontact メンバの追加
+add 追加
+addedyou $1 ($2) あなたは次の人のメンバリストに追加されました。
+addprofile 新しいプロフィールを追加する
+addprofiledesc 新しいプロフィールを作成するために、アカウントを入力してください。¥nプロフィールを作成すると、アカウント毎に別々の設定ができます。¥nプロフィールを作成しないと、履歴/アラーム/パスワード保存機能が使えません            
+addstate 追加
+addto $1 に追加する
+addtocontacts メンバリストに追加する
+addtoo この人を自分のメンバリストにも追加する
+admincontacts メンバ管理
+admingroups グループ管理
+advanced 詳細
+advancedprefs 詳細オプション設定
+adverts 広告
+agotinvitation Received Audio invitation from $1
+alarmonconnect ユーザーがオンラインになった時にアラーム
+alarmondisconnect ユーザーがオフライン/不可視になった時にアラーム
+alarmonmsg メッセージが届いたときにアラーム
+alarmonstatus 他のユーザーのステータスが変わった時にアラーム
+alarmpref この人にアラームを設定
+alarmpref2 すべての連絡先に関してのアラームの設定
+alarms アラーム
+alarmstatus アラームのオン/オフ
+allfiles 全てのファイル
+allmonths 全ての月
+allowallbutbl ブロックリストに入っていないメンバからのメッセージを全て受け取る
+allowbadwords ニックネームの検閲を無効にする
+allowlist 許可リスト (AL):
+allowonlyinal 許可リストに入っているメンバからのメッセージのみ受け取る
+allowseen この人にオンライン状況を伝え、IMを受信する
+allow_sms Allow users to contact me on my MSN mobile device
+allprofilesinuse 既存のプロファイルは全て使用中です
+always いつも
+animatedemoticon この絵文字はアニメーション表示可能
+animatedsmileys スマイリーをアニメーション表示する
+animatenotify 通知ウィンドウをアニメーション表示する
+appearance 外観
+appearoff オフラインに見せる
+areacode エリアコード
+aretyping $1 がメッセージを入力しています
+askcam Webカメラを受け取るか尋ねる
+askcontactwebcam to ask for your contact's webcam, or 
+askeachtime 毎回尋ねる
+asksendingyourwebcam to ask for sending your own webcam
+asksendoim Do you want to send this message as an offline message ?
+askwebcam Ask this user to send his/her webcam
+assistantainput Choose your input device and try recording with it.
+assistantaoutput Choose your output device, and try playing this file to test it.
+assistantawarn You won't be able to record yourself, or speak to your friends. You may find answers on how to install this extension on our Wiki:
+assistantfinetunepic Change the following settings to adjust the image quality of your webcam
+assistantselectcam Select your webcam from the list
+assistantstarting Starting the Assistant
+assistanttitle Audio and Video assistant
+assistantwelcome This assistant will guide you through the setup of your audio and video settings for aMSN.¥n¥nIt will check if the required extensions are present and loaded and you'll be able to choose the device and channel, set the picture settings and resolution.
+audioconfigured You chose the following Audio settings:¥n¥nOutput Device: $1¥nInput Device: $2
+audiovideo オーディオとビデオのセッティング
+author 作者
+autoaccepted 自動的に許可されたファイル転送
+autoacceptft ファイル転送要求を自動的に受け入れる
+autoaway 次の間アクティブではなかった場合『退席中』にする
+autocheckver 起動時に新しいバージョンの確認を自動的に行なう
+autoconnect2 AMSNを起動した時サインインする
+autoconnect AMSN起動時に接続する
+autodetectip IPアドレスを自動的に検出する
+autohotmaillog 自動でHotmailにログインする
+autoidle 自動で『非使用中』にする
+autoip 自動IP設定
+autolisten_voiceclips Automatically play voiceclips once received
+automessage 自動メッセージ
+autonoact 次の間アクティブではなかった場合『非使用中』にする
+autoresizedp Automatically resize display pictures to default size
+avaccepted ビデオ電話会議を許可した
+avcanceled ビデオ電話会議をキャンセルした
+avgotinvitation Received Video Conference invitation from $1
+avinitfailed Initialization of the Audio/Video Plugin failed. Call Canceled
+avoidseen このメンバにオンラインであることを伝えず、IMを拒否する
+away 退席中
+awaymsg1 退席中/一時退席中/取り込み中 に変更する度に不在メッセージを決める
+awaymsg2 毎回不在メッセージを決めず、常に次のメッセージを使用する
+back Back
+baduserpass パスワードかメールアドレスが間違っています
+badwebcam Webカメラの画像を表示することができません。 あなたのWebカメラが上手く繋がっているか、そしてインストールされているか確認してください。
+bgcolor 背景色
+blankdirect 直接接続するにはここを空白にしてください
+block 禁止
+blocked 禁止済み
+blockedyougroup あなたを禁止しているグループを表示
+blocking 禁止中
+blockinter1 オンライン時のチェック間隔
+blockinter2 秒, オンラインでないときのチェック間隔:
+blockinter3 ユーザ、その時のチェック間隔
+blockinter4 秒。
+blocklist ブロックリスト (BL):
+blockmessage メンバはオンラインですが、あなたをブロックしています
+blocknotifications 通知ウィンドウを表示させない
+blocksounds 音を無効にする
+blockusers 同時にチェックするユーザー数
+bouncedock Bounce aMSN's icon in the dock when a message is received
+brightness 明るさ
+broughtby aMSNは次の開発者によって提供されています。
+browse ブラウズ
+browser ブラウザ
+browserexample ( ¥$url はURLに置き換えられます)。 例: mozilla ¥$url
+bugerror Sorry, but there was a problem connecting to the bug database. Please check your internet connection.
+bugnocomment Send without a comment? Commenting on a bug helps us figure out what went wrong and fix it easier.
+busy 取り込み中
+bytesymbol b
+cachedpics $1 cached pics
+cachedpicsfor キャッシュされたユーザの画像を表示する
+cagreement Confidentiality Agreement
+cancel キャンセル
+cancelled キャンセルした
+cannotdeleteprofile そのプロフィールはAMSNで利用中のようなので消去できません
+cantexec 以下のアプリケーションが実行できません: $1. 設定を確認してください
+cantget $1 を手に入れることが出来ませんでした。
+cantloadonlineversion Can't recover the On-Line updated list of languages from the Internet
+cantremoveothers "その他"グループは削除できません
+captureextloaded Capture extension -$1- is loaded
+captureextnotloaded Capture extension -$1- is not loaded, you have to compile it first
+captureproperties Webカメラのイメージプロパティ
+capturewarn You won't be able to send your webcam if you have one. If not, it's normal. You may find answers on how to install this extension on our Wiki:
+casesensitive ケースごとに異なるトリガを使用する
+cfgalarmall 全体のアラームの 設定/追加/削除
+cfgalarm アラーム 設定/追加/削除
+change_account_info アカウント情報の変更
+change 変更
+changecustomstate 切り替える
+changedisplaypic 表示画像の変更
+changefont フォント変更
+changeglobnick グローバルニックネームの変更
+change_mobile モバイルセッティングの変更
+changenick 名前変更
+changesize サイズの変更
+changestate $1 のステータスが $2 になりました
+changestatus ステータスの変更
+changevideosettings ビデオセッティングの変更
+channels チャンネル
+charscounter 会話ウインドウに文字数カウンタを表示する
+chatack 次のメンバからのチャットを開いています
+chat 会話
+chatmaxmin 新しい会話が始まったとき:
+chatreq 会話に招待しています
+chatsmileys2 会話に絵文字を表示する
+chatsmileys 絵文字
+checkblocking メンバが自分をブロックしているかを常にチェックする
+checkemail 連絡リストの中でメール通知ライン(inbox)を表示する
+checkfilman 受信したファイルは $1 に保存されます。ファイルマネージャを確認してください
+checkingaudio Checking if audio extension (Snack) is loaded ...
+checkingcam Checking if a webcam is connected ...
+checkingcapext Checking if '$1' extension is loaded ...
+checkingextensions Checking for required video extensions
+checkingver 新バージョンを確認しています
+checkonfln 他のユーザーがオフラインになった時にそのユーザーにブロックされているかをかをチェックする
+checkopenfilecommand Please check the open file command in preferences window
+checkver 新バージョンを確認
+choosearq 使用システムのアーキテクチャ選択
+choosebasefont フォント選択
+choosebgcolor 背景色選択
+choosechannel チャンネルを選択
+choosecontact リストからメンバを選んでください
+choosedevice あなたのdeviceを選択
+choosefontcolor 文字色選択
+chooseinputdev あなたの入力deviceを選択
+chooselocation Choose new file location
+choosemixerdev あなたのmixerを選択
+chooseoutputdev あなたの出力deviceを選択
+chooseskin 使いたいスキンを選択してください
+ch_to_state 新しい状態に切り替える
+clear Clear
+clearlog2 全メンバの履歴を削除
+clearlog3 全ログを削除
+clearlog ログ削除
+clearwebcamlogs Webカメラのログ全てをクリア
+clickhere ここをクリック
+clicktoadd Click the 'Add' button to add a new note
+clicktologin ここをクリックするとサインインします
+clientcaps Send x-clientcaps packet to other's clients
+clientname クライアントの名前
+closeall このウィンドウの全てのタブを閉じますか？
+closealltabs 全てのタブを閉じる
+close 閉じる
+closechatwindows サインアウトの前に全ての会話を閉じますか？
+closed アクティブでなくなったので $1 の会話を終了しました
+closelabel When you click the close button in a tabbed chat window
+closeonly 現在のタブだけ閉じる
+closeorcall You have to close/cancel the Audio Call before closing the window.
+closeordock Closing the contact list window will quit aMSN. Maybe you meant to just close the window and have aMSN stay alive in the tray.¥n¥nAre you sure you want to quit aMSN?
+closeothers 他の全てのタブを閉じる
+closingdocks 閉じるボタンを押したときも最小化する
+color 色
+command コマンド
+commandstatus コマンドを実行
+configure 設定
+configuremic あなたのマイクの構成する
+configuringaudio オーディオセッティングを構成する
+configureplugin $1 プラグインを構成
+confirm 本当によろしいですか？
+confirmbl 本当にこの連絡先をブロックしてもよろしいですか？
+confirmdelete 本当に $1 を削除してもよろしいですか？
+confirmdg 本当にこのグループを削除してもよろしいですか？
+confirmdu 本当にこのユーザを削除してもよろしいですか？
+confirmeg 本当にこのグループを空にしてもよろしいですか？
+confirmpurge 他のメンバからの全ての表示画像が削除されます (あなたの表示画像は削除されません)。よろしいですか?
+confirmrfl Are you sure you want to delete this user from this group?
+confirmfulldelete Also remove from Windows Live Address Book
+congrats 構成
+connected 既に接続済みです。
+connectedat Connected At 
+connectedwith $1 が接続しました。
+connecterror サーバに接続できませんでした
+connectfirst Please connect first
+connecting 接続しています
+connection 接続
+connectionlost サーバが終了したため切断されました。
+contactadded メンバリストに追加しました
+contact メンバ
+contactdoesnotexist メンバが存在しません！
+contactlist メンバ リスト (FL):
+contacts メンバーズ
+continuously Continuously
+contrast コントラスト
+conversationwith $1 users in conversation
+convertexplain ImageMagickに含まれる実行ファイル CONVERT のパスを指定します (画像表示に必要です）¥n CONVERTがパスに含まれているときには空欄にしてください。
+copy コピー
+copytoclipboard Copy $1 to the clipboard
+copytogroup グループにコピー
+corruptconfig 設定ファイルが壊れています。新しいファイルを作ってください。古いファイルは $1 に保存されました。何が起こったかの確認のため、それを私達に送ってください
+corruptstates カスタムされた状態の設定が壊れています。新しいファイルを作ってください。古いファイルは $1 に保存されました。何が起こったかの確認のため、それを私達に送ってください
+couldnotrename Could not rename file $1
+countrycode 自分の国/地域番号
+cprofile プロフィールを作成する
+created Created
+credits Credits
+curdisplaypic 現在の画像表示
+currentdate 現在の日時
+currentdynrate Current real-time speed (in milliseconds)
+currentlanguage This is the language currently in use
+currentnotes Current notes
+custnotifymsg Display notify window when a message from this user arrives
+custnotifyoffline Display notify window when this contact goes offline
+custnotifyonline Display notify window when this contact comes online
+custnotifystatus Display notify window when this contact changes status
+customcolor Custom color
+customdp Custom Display Picture
+custom_edit カスタムスマイリーの編集
+custom_new 新しいカスタムスマイリーを追加
+customnick Custom Nick
+customsmileys Display other users' Custom Emoticons
+customstyle Customized Style
+custshowcustomsmileys Show user's Custom Emoticons
+cut 切り取り
+cutimageboxreset Reset the selection box¥nsize to:
+cutimagebox Select the part of the image you want to use, resizing and moving the selection-box
+date 日付
+dateformat 日付のフォーマットを変更
+day 日
+days 日
+dcprofile プロフィールを作成しない
+default2 デフォルト
+default 標準設定
+defaultloginradio デフォルトの設定でログインする
+defchatwinsize 会話ウインドウのデフォルトサイズ (横x縦)
+deleteall 全て削除
+deleteblock Delete and Block
+deletecustomstate カスタム状態の削除
+delete 削除
+delimiters タイムスタンプの区切り
+deliverfail 次のメッセージを配信する際、問題が発生しました
+delprofile2 削除したいプロフィールを選択してください
+delprofile プロフィール削除
+description 詳細
+detach Detach
+details Details
+devicebusy Device $1 is busy
+devices デバイス
+directconnection インターネットに直接接続しています(ポート1863を使用)
+disabled 無効
+disableprofiles プロフィールを無効にする (ネットカフェや共有マシンで有用)
+disablessl SSLを無効にする
+disableuserfonts チャットでリモートユーザのフォントを無視する、そして自分自身のフォントタイプを使用する。
+disconnect $1 は切断されました
+disconnectedfrom $1 から切断されました。
+displaychat テキストオプションを表示する
+displayeventconnect 連絡先がオンラインになった時表示
+displayeventdisconnect 連絡先がオフラインになった時表示
+displayeventemail E-Mailを受け取った時表示
+displayeventstate 連絡先がステータスを変更した時表示
+displayeventnick 連絡先がニックネームを変更した時表示
+displayeventpsm 連絡先がPersonal Messageを変更した時表示
+displayp4context Display P4-Context field content as message sender
+displaypic 画像を表示
+dockfreedesktop FreeDesktop (KDE3/Gnome2)
+dockgtk Gnomeドック
+docking ドッキング
+dockingoff ドッキングしない
+dockkde KDEドック
+done Done
+dontaskweek Don't ask update again for one week
+dontdownload TLSをダウンロードしない。手動でインストールします。
+dontshow 表示しない
+dontshowdp Don't let this user download your new Display Pictures
+download ダウンロード
+downloadcanceled ダウンロードをキャンセルした
+downloadingtls TLSモジュールを以下からダウンロードする:¥n $1
+downloadingwait Downloading new aMSN version. Please Wait...
+dynamicrate Use dynamic frame rate to simulate the real-time speed 
+editcontent Edit the content of the subject field and the note field
+editcustomstate カスタム状態の編集
+edit 編集
+editavsettings AudioとVideoの設定を編集する
+editmyprofile MSNプロフィールを編集する
+editnewstate 新しい自動返信メッセージ
+editprofile プロフィール編集
+editstate 自動返信メッセージの編集
+editvalue 値を編集する
+email E-Mail
+emailsinlist メンバリストで、名前の代わりにメールアドレスを表示する
+emoticon_steal 絵文字を追加する
+emotisounds 特定の絵文字に対してサウンドを再生する
+emptygroup 空のグループ
+enabled 有効
+enableproxy プロキシを有効に
+enableremote リモートからの操作を有効にする
+enablesound サウンドを有効にする
+encoding2 あなたの文字コードを変換する方法
+encoding 文字コード選択
+enterbugdesc Enter a description of what you were doing to help us reproduce the bug:
+entercontactemail 連絡メールアドレスを入力
+enterfilename ファイル名を入力してください
+enternick 名前を入力してください
+enterpsm あなたのPersonal Message
+escapeclosescw Escape keyでチャットウィンドウを閉じます。
+error Error
+errortls TLS モジュールのインストール中にエラーが発生しました:
+eventhistory イベント履歴を見る
+examples 例
+exitamsn 本当に終了してよろしいですか？
+extras 追加サービス
+faileddelete 削除に失敗しました
+faileddeleteperso 個人画像ファイルでないため、この画像は削除できません。個人プロフィールに属する画像のみが削除できます
+failed 失敗しました
+faq FAQ (質問と回答)
+farsightextchecking Checking if Farsight extension is loaded ...
+farsightextwarn You won't be able to have SIP calls. You may find answers on how to install Farsight on our Wiki:
+farsightinfook Farsight is a framework to deal with audio/video conferencing protocols. With Farsight, you can send or receive SIP calls within aMSN! Have a look at farsight on our Wiki:
+fetching Fetching data...
+filedoesnotexist ファイルが存在しません
+file ファイル
+filemanexample ( ¥$location はディレクトリ名に置き換えられます ) 例: nautilus ¥$location
+fileman ファイルマネージャ
+filename ファイル名
+filenotwritable このファイルは削除できません
+filetransfercancelled ファイル転送を中止しました
+filetransfercomplete ファイル転送が完了しました
+filetransfer File Transfer
+filters Filters
+filtersselect Select the filters you want to use¥n(Note: none selected means 'show all')
+filtersx Filter Selection
+findasyoutype Find as you type
+find Find
+findnext Find Next
+findprev Find Previous
+finetunesettings Finetune picture settings
+finish Finish
+finish2apply Press Finish to apply those settings.
+firewalled You are firewalled or behind a router
+firewalled2 You are firewalled, please check your Connection settings in the preferences window
+followtext 文字が入力された時スクロールする
+forget_me Forget me
+forgot_pass I forgot my password
+formatctt CTT format
+formatcsv CSV format
+friendlyname Friendly Name
+ftacceptedby $1 がファイル $2 の転送を承諾しました
+ftaccepted ファイル転送を承諾しました
+ftaccepting ファイル転送の要求を承諾しています
+ftautoclose Close this window after completing the file transfer
+ftconnecterror リモートピアーとの接続に失敗しました
+ftconnecting $1 のポート $2 に接続しています
+ftconnectionlost リモートピアーとの接続が切断されました
+ftgotinvitation $1 はあなたにファイル $2 ($3 バイト)を送信しようとしています。受信したファイルは $4 に保存されます。ファイルを受信しますか？
+ftportpref ファイル転送のポートを開いています
+ftportpref2 Starting port for direct connections (needed for file transfers and webcam)
+ftporttest Test port
+ftrejectedby $1 はファイル $2 の転送を拒否しました
+ftrejected ファイル転送を拒否しました
+ftsendinvitation ファイル $2 ($3 バイト)の転送が完了しました
+fullcontactlist これ以上メンバリストにメンバは追加できません。追加するためには既存のメンバの削除が必要です
+gameaccepted $1 has accepted your game invitation
+gameclosedbyother $1 has canceled the game session with you.
+gameclosedbyself You have canceled the game session with $1.
+gameinvitation $1 has invited you to play $2. Do you want to accept this invitation?
+gamepluginnotfound $1 has invited you to play $2 but there is no plugin for this game currently loaded. Please activate and configure this plugin first.
+gamerejected $1 has rejected your game invitation
+gamerequest You have invited $1 to play $2
+getdisppic 他のユーザーの表示画像を受信する
+getmoreplugins 他のプラグインを手に入れる
+getmoreskins 他のスキンを手に入れる
+globalcontainer Global container
+globalnick Insert a pattern to form all your contacts' nicknames. You can use these variables: ¥$user_login for you contacts' address, ¥$nick for your contacts' nickname and ¥$customnick for your contacts' custom nickname. For example: '¥$user_login is ¥$nick' will be 'contact@msn.com is Contact'
+globalnicktitle Global Nickname
+globaloverride Global nickname pattern should override custom nicknames
+gonelunch 昼休み
+gotink $1 sent you an ink.
+goto Go to $1
+gotoinbox 受信トレイへ
+goto_prefs_removeprofile Click here to go to preferences and delete your profile
+groupadd グループ追加
+groupcontacts Group contacts
+groupcontactsbystatus Group Contacts by Status
+groupdelete グループ削除
+groupexists グループは既に存在します
+group グループ
+groupmissing グループが見つかりません
+groupnewname 変更後のグループ名
+groupnonim Group Non-Instant Messaging Contacts Together
+groupnotempty グループが空ではありません
+groupoldname 変更するグループ名
+grouprename グループ名変更
+groups グループ
+groupunknown 不明なグループ
+handle 名前
+hangup Hang Up
+havenomic I have no microphone
+helpcontents ヘルプの内容
+help ヘルプ
+hidedisplaypic 表示画像を隠す
+hidebuttonbar ボタンバーを隠す
+hidemenumessage Are you sure you want to hide the menus ?¥nYou can restore them any time by using the show/hide menus hotkey 'Ctrl-M'.
+hidemenu メニューの表示/非表示
+hiden この絵文字をスマイリーメニューに表示しない
+hidewindow ウィンドウを表示しない
+history 履歴を参照
+history2 履歴
+home 家
+howto_remove_profile To delete your profile (forget $1) you need to do so from the preferences window. ¥n¥nFor security reasons, profile deletion from the login screen is not allowed.
+httpconnection HTTP(ポート80)を使用して接続する
+hue Hue
+huge Huge
+hybrid ハイブリッドモード
+ident 個人情報を読み込んでいます
+identity 個人情報
+ignorecontact Ignore the conversations from the contact
+ignoreerrors Silently ignore other aMSN errors until the end of session
+ignore Ignore
+imagefiles 画像ファイル
+inbox 受信箱
+insertsmiley 絵文字の挿入
+inserttextnote Insert text into the subject field and the note field, then click 'Save'
+installconvert Buddyアイコンやカスタムの絵文字を使用するには ImageMagick (変換プログラム) をインストールする必要があります。各OS用のバイナリを以下のサイトからダウンロードできます(ftp://ftp.imagemagick.net/pub/ImageMagick/binaries/)。すでにインストールしてある場合はプログラムのバグですので、ご一報下さい。ImageMagik をインストールして、設定からこのオプションを有効にしなければ、この機能は使えません。 
+internalerror サーバエラー(Interal Server Error)
+invalidfile2 Filename $1 could not be created, make sure you have the correct permissions for that target.
+invalidfile "$1" に入力された $2 というファイルは存在しないか、読むことができません
+invalidgroup Invalid group
+invalidparameter Error connecting to server: invalid parameter
+invalidpicsize The given picture is too big, please choose a smaller one
+invalidpic The given picture file doesn't exist
+invalidsound The given sound file doesn't exist
+invalidusername その名前は無効です
+invitationcancelled 要求はキャンセルされました。
+invite 招待
+ipaddress IPアドレス
+ipdetect HTTPを使用して正確なIPを検出する
+ircstyle IRC Style
+istyping $1 はメッセージを入力しています
+joins $1 が会話に参加しました
+justonce Just once
+keepalive Keepalive (NAT)
+keeplog2 全会話をAMSN履歴に保存する
+keeplog ログを保存する
+language 言語
+language_manager Language manager
+large Large
+largest Largest
+lastlogin 最後のサインイン
+lastlogout 最後のサインアウト
+lastmsgedme 最後のメッセージ
+lastmsgtime 最後のメッセージは $1 に受信しました
+lastseen Last time online
+lazypicretrieval Lazy Display Pictures retrieval
+lclosedwin $1 は $2 との会話を閉じました
+lconftopriv 会議が $1 との会話に変更されました。
+lconvstarted $1 で会話が始まりました
+lconvstartedOIM Started an Offline Instant Messaging conversation on $1
+leaveblankforhotmail HotmailをWebで使うにはここを空白にしてください
+leavejoinsinchat Show "leaves/joins conversation" notifications inside the chat window
+leaves $1 は会話から抜けました
+lenteredconf $1 が $2 での会議に参加しました
+lineflushlog 行ごとにログファイルへ書き込む
+linprivate 二人の会話で
+listening Listening
+listeningon ポート $1 を開いています
+listsmileys2 メンバリストに絵文字を表示する
+listsmileys 絵文字リスト
+ljoinedconf $1 が会議に参加しました
+lleftconf $1 が会議から抜けました
+loadcontacts メンバリスト読み込み
+load ロード
+loadotherdisplaypic Loading display pictures of $1, please wait...
+logbigger 各ログファイルのサイズが次のサイズを超えないようにする
+logeventconnect Log the connections
+logeventdisconnect Log the disconnections
+logeventemail Log when an email is received
+logeventstate Log the status changes
+logeventnick Log the nickname changes
+logeventpsm Log the Personal Message changes
+logfandexp ログファイルサイズと履歴を終了
+loggedotherlocation ほかの場所からサインインしたため、サインアウトさせられました
+loggingin サインインしています
+loginas ほかのアカウントでサインインする
+loging ログ
+login サインイン
+logolder 最後の会話のみログする
+logout サインアウト
+logoutwincloselabel When Signing Out, close conversations
+logsbydate Sort logs by date (View history loads a lot faster)
+logschats Is logging chats
+logsin がログインしました
+logsmileys 履歴で絵文字を表示する
+logsout がログアウトしました
+logwebcam Save all webcam sessions to aMSN's History for future viewing
+longnick ニックネームが 130 文字より長いです。これは MSN プロトコルで公式にはサポートされていません。設定してよろしいですか?
+longp4c Your Friendly Name is longer than 130 characters. The Friendly Name that will appear on the official MSN client will be $1. Are you sure you want to set it?
+longpsm Your Personal Message is too long. This is not officially supported by the MSN protocol. Are you sure you want to set it?
+lowrescam Use a low-resolution webcam
+lprivtoconf 会話が $1 との会議に変更されました
+luclosedwin $1 のウィンドウを閉じました
+mailerexample ( ¥$recipient = 宛て先 ) Hotmail を利用する場合は空欄のまま
+mailer メーラ
+maintenance The server is going down for maintenance in $1 minutes
+maximised 最大化
+medium Medium
+minimised 最小化/アイコン化
+minimize トレイへ最小化する
+mins 分
+mobilegrp1 モバイルグループ
+mobilegrp2 Put users in "Mobile" group when offline (and sorted by status)
+mobile 携帯
+modified 制限した
+month 月
+more More
+morepersonal 詳細 →
+move 移動
+movetogroup グループに移動
+msgflicker フォーカスされていないウィンドウにメッセージが届いた時に、ウィンドウのタイトルを点滅させる。
+msgmaxmin 新しいメッセージが届いたとき:
+msg メッセージ
+msgmode どのように次のウィンドウを扱うか選択してください
+msn AMSN
+msnstatus MSNネットワークステータス
+msnstyle MSNスタイル
+mustrestart 設定の変更を反映するにはAMSNを再起動する必要があります
+myfriendlyname 親しい名前
+myhomephone 自宅電話番号
+mymobilephone 携帯電話番号
+mynick 私のニックネーム
+mypic 自分の表示画像:
+mypics 私の画像の表示
+mystatus 状態
+myworkphone 勤務先電話番号
+name 名前
+natip WebページでのIP検出
+natkeepalive よく切断されるのでKeepAliveを有効にする
+needonline あなたは今オフラインになっています！
+needwinico2 Need winico05.dll in the utils/windows directory for windows traydocking to work
+never Never
+new_account アカウントを作成
+newchat 新しいチャット
+new_ft_protocol Use new File Transfer protocol (some bugs remain)
+newline Newline
+newmail 受信箱に $1 通のメッセージがあります
+newmailfolder You have $1 new message(s) in other Hotmail folders
+newmailfrom 次の人からメールが来ました $1 ($2)
+newmailfromother New mail in other folder from $1 ($2)
+newmsg 新メッセージ
+newoim New Offline Messages
+newstate カスタム状態の追加
+newtabbedfeature aMSN has a new feature for managing conversation, you can now have all of your windows from the same group or from your whole contact list in one tabbed window. Please choose the way aMSN should manage your conversations
+newupdate aMSNの新しいアップデートが利用可能です
+newveravailable 新しいバージョン $1 がダウンロード可能です
+next 次へ
+nick Nick
+nickchanged $1 はニックネームを '$2' に変更した
+no No
+noactivity 非使用中
+nocacheddps No Display Pictures in cache for this user
+nocamwarn No webcam were found, or your webcam is already in use by another program (which means it cannot be used by aMSN). You will find help on how to solve this issue on our Wiki:
+nodataavailable $1 のデータはありません。
+nodevices Currently, no devices are installed
+noftpreview Disable sending a preview of images in file transfers
+nogap No space between groups
+nogroup No group
+nojavascript You do not have javascript enabled. Automatic signin might not work.
+nologfile $1 とのログファイルはありません
+nomic No microphne
+noneavailable 何も利用できません
+nonewmail 未読メールはありません
+nonewver 新しいバージョンはありませんでした
+nonimgroup Non-Instant Messaging Contacts
+nooimconfirmation Do not ask for confirmation when sending/receiving Offline Messages
+nopic 画像なし
+noprofileexists プロファイルが存在しません。¥n既存のプロファイルからログインするためには、プロファイルを追加する必要があります。¥n追加するには「新しいプロファイルを追加する」ボタンをクリックしてください。
+noresizesmileys Do not scale down incoming custom emoticons
+normal 通常
+noskins skins/ フォルダにデフォルトのスキンが見つからないため、AMSN を起動できません
+nosound No sound was detected, make sure your microphone has been connected to your computer properly
+nosound_or_hold No sound was detected. To send a Voice Clip you need to press and hold down the button while speaking then release it to send the message.
+nospace Nothing to see here
+nosystemtray システムトレイはありません。
+note Note
+notificationserver 初期MSN通知サーバ (MSNメッセンジャーサーバ)
+notify1_5 メンバがオフラインになった時に、通知ウィンドウを表示する
+notify1_75 メンバのステータスが変わったときに、通知ウィンドウを表示する
+notify1 メンバがオンラインになったら通知するウィンドウを表示する
+notify2 メッセージを受信したら通知ウィンドウを表示する
+notify3 メールを受信したら通知ウィンドウを表示する
+notify4 Display notify window when new emails arrive in other folders
+notify 通知
+notifyoffset 通知ウィンドウの位置を固定する
+notifytimeout Number of milliseconds before notify window disappears
+notifytyping メッセージの入力を他のユーザーに通知する
+notifywin 通知ウィンドウ
+notinlist You aren't on his/her contact list
+notimcontact This contact is not an Instant-Messaging contact
+notls The MSN Protocol 9 を利用するには TLS パッケージが必要ですが、このコンピュータにはインストールされていないようです。インストールされている場合には、設定ウィンドウからライブラリへのパスを設定する必要があります（例: /opt/tls/lib）。¥n¥n TLSは以下のサイトからダウンロードできます。http://tls.sf.net 
+nottabbed タブ無しの通常のウィンドウ
+nousersinsession この会話には誰もいません
+nouserspecified No user specified
+nudge $1 requests your attention
+offline オフライン
+oim Offline Messaging
+ok 決定
+onenewmail 1通の新着メールがあります
+onlinehelp オンラインヘルプ
+online オンライン
+onphone 電話中
+opendir ディレクトリを開く
+openfilecommand ファイルを開くコマンド
+openfile 開く
+openreceived 受信したファイルを開く
+options オプション
+ordercontactsby メンバリストの表示方法
+ordergroupsby グループリストの表示方法
+original Original
+otherdisplaypic Other display pictures of this user (right-click for more options)
+other その他
+otherdps 他の画像を表示する
+others その他
+p4contextprefix Prefix P4-Context senders with this string
+pager ポケベル
+pass パスワード
+paste 貼り付け
+pausedwebcamreceive The webcam has been paused by the other user
+pause Pause
+pausewebcamsend Pause sending of webcam
+personal 個人
+phone 電話
+phones 電話番号
+picbrowser 画像表示ブラウザ
+picfile 画像(500 x 500 以下のGIF)
+picstatus アラームの画像
+play Play
+playbackposition Playback position
+playbackspeed Playback speed (milliseconds between each frame)
+playerror An error occured when trying to play the sound : $1
+playgame Play game
+playgame2 Play $1
+playing 再生中: $1
+playtest Play the test file
+playwebcamsend Resume sending webcam
+pluginselector プラグインを選択
+port ポート
+portswellconfigured Your ports are well configured
+prefalerts 効果音設定
+prefapps アプリケーション
+prefawaymsg 不在メッセージ
+prefblock1 切断時にチェック
+prefblock2 常にチェック
+prefblock3 グループによる"あなたはブロックされました"表示の設定。
+prefconnection 接続設定
+prefemotic 顔文字
+preferences 詳細設定
+preffont2 チャットでの文字表示方法を変更
+preffont3 フォント
+preffont4 Change the way I see other people's text in chat sessions
+preffont 自分の文字
+prefft File transfer, peer-to-peer and NAT settings
+preflibs ライブラリのディレクトリ
+preflocale Locale settings
+preflocale2 Select your language-/country-code
+preflog1 履歴とログの設定
+preflogevent My Events History
+preflook AMSNの外観
+prefmsging メッセージング インターフェース
+prefname MSN メッセンジャーの名前
+prefphone2 許可するメンバに公開する電話番号を入力してください
+prefphone 電話番号
+prefprivacy2 自分の連絡先/相手の連絡先リスト
+prefprivacy 許可/ブロックリスト
+prefprofile2 公開プロフィールを作成/編集
+prefprofile3 AMSNのユーザプロフィール
+prefprofile 公開プロフィール
+prefproxy プロキシ設定
+prefremote リモート接続設定
+prefsession サインイン状況
+prefshared 接続共有
+prefsound 効果音
+preview プレビュー
+privacy プライバシー
+profiledconfig プロファイル済みの設定
+profileexists このログインに対しては既にプロファイルが存在しているので新たに作成することができません。¥n 別のログインを選択してください。 
+profileinuse そのプロフィールは別に起動しているAMSNが使用しています。 ¥n 他のものを選択してください。
+profileloginradio 既存のプロファイルを利用してログイン
+profiles プロファイル
+properties 詳細
+proxyconfhttp HTTPプロキシを自動設定する
+proxyconf プロキシ設定
+proxyconnection 次のProxyサーバを使用してインターネットに接続:
+proxy HTTPかSocks5のプロキシ内部で使用する
+psmatend Show Personal Message beside the nickname
+psmchanged $1 Changed his PSM to '$2'
+psmdontshow Don't show Personal Message, unless otherwise defined in global/custom nicks
+psmnewline Show Personal Message below the nickname
+psm 個人メッセージ
+psmplace Where should the Personal Message be placed ?
+publishphones 電話番号を公開
+purge 消去
+pwcdriver You are using the pwc driver
+quit 閉じる
+raised 開く/アイコン化解除
+readonlymsgbox 保存先ディレクトリが読み取り専用なので、ファイル転送を中止しました。保存先ディレクトリのパーミッションを変更してください。
+readonlywarn 警告: ファイル受信ディレクトリが書き込み制限されているため、受信ファイルはおそらく正しく保存できません。ファイル転送を行う際には予め保存先ディレクトリ ($1) のパーミッションの設定が適切であるか確認してください。
+receivedbytes $1 / $2 バイトを受信しました
+receiveddir 受信ファイルフォルダ
+receivedoimread You have $1 new Offline Instant Messages. Do you want to read them ?
+receivedvoice Received Voice Clip
+receivefile ファイル受信
+recentmsg Prevent closing a chat window when a message has just arrived
+reconnect2 Reconnect on loss
+reconnecting 再接続しています
+reconnect $1 が再接続するのを待っています
+reconnectnow Reconnect now
+record レコード
+recorderror An error occured when trying to record the sound : $1
+recvwebcamaccepted $1 accepted your invitation to view his/her webcam. Connecting...
+redirect Click here to get redirected
+reject 拒否
+rememberaccount アカウント情報を記憶
+rememberpass パスワードを保存
+remembersetting 自分の選択を記憶
+removeempty Remove empty groups from the contact list
+removefromgroup グループから削除
+removefromlist リストから消去する
+rename Rename
+renameep Rename this location ($1)
+renamelocation Rename this location
+reporting Reporting
+report Report
+required_version Unable to load this plugin. It requires, at least, aMSN version $1
+retry 再試行
+resetincomingfont Reset font (use font message sender chooses)
+restartforskin Note: You may need to restart aMSN to view the skin properly!
+reversed 逆順
+reverselist 相手の連絡先リスト (RL):
+rightback 一時退席中
+saveas 別名で保存
+savechatwinsize 会話ウィンドウのサイズを記憶する
+savecontacts メンバリスト保存
+save 保存
+saveddefaultloc Save in default location
+savelocation Do you want to save file on $1?
+savelocationerror File can't be saved at this place.
+saveotherdirectory Save in another directory
+savetofile ファイルに保存
+says $1 の発言
+sbcon スイッチボードに接続しています
+searchadvprefs Search in advanced preferences:
+searchdown Search down
+searchup Search up
+selectall 全てを選択
+selectcontact 連絡先を選択する
+selectplugins プラグインを選んでください。
+selectskin リストからスキンを選んでください。
+sendcam Webカメラを送信
+sendemail Send my email address to notify me of changes
+sendfeedback フィードバック送信
+sendfile ファイル送信
+sendmail メール送信
+sendmobmsg 携帯へ送信
+sendmsg メッセージ送信
+sendoim オフラインメッセージを送信
+send 送信
+sendsip Start Audio Call
+sendvoice Send a Voice Clip
+sendwebcamaccepted $1 accepted your invitation to view your webcam. Connecting...
+sendwebcaminvite Invite a user to see your webcam
+sentbytes $1 / $2 バイトを送信しました
+sentvoice Sent Voice Clip
+serverbusy サーバが混雑しています
+servergoingdown サーバがダウンしたためサービスから切断されました
+server サーバ
+serverunavailable サーバは利用できません
+session セッション
+setasmydp Set as my display picture
+setupcam Setting up your webcam device
+setupcamfinetune Setting up webcam device, and finetuning picture
+shareswebcam Shares webcam
+showbanner Show aMSN's banner
+showblockedlist あなたをブロックしている人のリストを表示する
+showcachedpics Show cached display pictures
+show_contactdps_in_cl Show thumbnails of contacts Display Pictures in Contact List
+showcontactemail E-mailで連絡先を表示する
+showcontactnick ニックネームで連絡先を表示する
+showdisplaypic2 チャットウィンドウを開いたときに、画像を表示する。
+showdisplaypic 画像を表示
+showonedpframe Show only one DisplayPicture frame in chat windows
+showlinksinlogin Show Links in the Login Screen
+shownonim Show Non-Instant Messaging Contacts
+showmailicon Show mail icon on traydock when new emails arrive
+showmypic 自分の表示画像
+shownotify イベントが発生したときに、通知ウインドウを表示する
+showofflinegroup Show Offline Group
+showpicnotify Show users' pictures on notify windows
+showspaces Show Spaces icon in the contact list
+showuserpic $1 の表示画像
+signinstatus サインイン時のステータス
+signout サインアウト
+signouthere ここ ($1) からサインアウトしました
+signoutep $1 からサインアウトしました
+signouteverywhere Sign out from everywhere
+sipcallaccepted Audio Call Accepted
+sipcallback Call Back
+sipcalldeclined Audio Call Rejected
+sipcalleeaccepted User accepted your Audio Call
+sipcalleebusy User is currently Busy
+sipcalleecanceled User has canceled the Audio call Invitation
+sipcalleeclosed User has ended your Audio Call
+sipcalleedeclined User Declined your Audio Call invitation
+sipcalleenoanswer User did not answer your Call
+sipcalleeunavailable User is not available right now
+sipcallended Your Audio Call has ended
+sipcallimpossible You cannot make an Audio Call. Please install Farsight2 and try again.
+sipcallmissed You missed an Audio Call from $1
+sipcallnosipflag User does not support Audio Calls.
+sipcallsent Calling $1
+sipcallunsupported You have received an Audio Call invitation that is not currently supported. You may call back with a new invitation. The Audio Call will then work
+sipcallyouarebusy You can only have one Audio Call at a time.
+sipgotinvitation Received Audio Call invitation from $1
+skinselector スキンを選択
+skin スキン
+small Small
+smallest Smallest
+smileconfig カスタム絵文字の設定
+smilefile 絵文字ファイル
+smileintro2 必要な項目を編集して、絵文字をカスタマイズしてください。(必要に応じて FAQ を参照してください)
+smileintro 新たなカスタム絵文字を作成するには、必要な項目を全て埋めてください。(必要に応じて FAQ を参照してください)
+smiletoobig The smiley you choose is bigger than normal size. Do you want to resize it ?
+smileynotavailable Smiley not available!
+snackfailed Snack failed to load, reverting to default
+snackneeded The Snack library is needed in order to use this feature. A minimal version of 2.2.9 is necessary.
+snapshot スナップショット
+sngdblclick Single click to open a new message window
+sortcontactsasc 連絡先を昇順でソート
+sortcontactsdesc 連絡先を降順でソート
+sortcontactsby 連絡先の並び替え
+sortcontactsbylogsize ログの容量によって連絡先をソート
+sortcontactgroup グループによって連絡先を並び替える
+sortcontacthybrid ハイブリッドモードで連絡先をソート
+sortcontactstatus ステータスによって連絡先をソート
+sortgroupsasc グループを昇順でソート
+sortgroupsdesc グループを降順でソート
+sound2 メンバがサインインやメッセージを送信した場合効果音を鳴らす
+soundactive Play sounds when receiving incoming messages also in active windows
+soundcommand 再生コマンド
+sound 効果音
+soundexample ( ¥$sound = 再生する効果音のファイル名) 例: esdplay ¥$sound
+soundfile 効果音ファイル
+soundfiles サウンドファイル
+soundloop 効果音をループ
+soundnoavail The audio device is not available. Please stop any application using the sound device.
+soundserver サウンドサーバ
+soundstatus 効果音
+sourcecode ソースコード (コンパイルとインストールが必要です)
+splashstart Start
+sslwarning 警告!! SSLを無効にすると暗号化が無効になり、パスワードは平文のままでネットワークに送信されます。特殊なプロキシやネットワークの設定をする場合以外はSSLを無効にしないでください。
+startoffline2 サインイン時オフラインする
+startoffline オフラインで起動する
+startonboot Start aMSN on Windows boot
+startontray トレイアイコンの上でAMSNを起動する
+stateautomsg 自動返信メッセージ
+statechange 以下のステータスに変わりました: 
+stateedittext テキストフィールドを編集し、保存をクリックしてください。
+stateinfo 自動返信の設定
+state 次の状態にする
+statename 自動返信の名前
+statenewtext 必要な項目を記入し保存をクリックしてください。
+statenick 名前 (変更しない場合には空欄にしてください)
+statepsm Custom Personal Message (leave blank for no change)
+stats Statistics
+status ステータス
+step ステップ
+stopalarm アラーム停止
+stop 止める
+stopwebcamreceive Stop receiving Webcam
+stopwebcamsend Stop sending Webcam
+storenickname カスタム状態終了時に名前を元に戻す
+strictfonts 全てのフォントサイズを選択した設定にする(ステータスバーなど)
+stylechat 会話のスタイル
+stylehist AMSNのスタイル
+stylelog 参照したい履歴のフォーマットを選択してください
+style スタイル
+subjectrequired Subject required
+subject 件名
+svnversion SVN Version
+syntaxerror シンタックス エラー
+tabbedglobal A tabbed window for all users in the contact list
+tabbedgroups A tabbed window for users from the same group
+tabbed タブ ウィンドウ
+tabtitlenick Display nicks in the tabs instead of email
+temp_state 保存しない (設定は、AMSN を終了すると失なわれます)
+textsize 文字サイズ
+thismonth 今月
+throughserver Through server
+timeremaining 残り時間
+timestamps 会話ウインドウでのタイムスタンプ表示を有効にする
+timestamp タイムスタンプ
+title aMSNメッセンジャー
+tkerror1 TK has brought an error, there is a bug in aMSN, please report it by clicking the Report button. You can click Details to see more informations about the bug or click Ignore to continue chatting with aMSN.
+tkerror TK でエラーが起こりました。AMSN にバグがあります。ファイル $1 を amsn-bugs@lists.sf.net に送ってください
+tlsdowncompleted ファイル $1 の $2 へのダウンロードが完了しました。展開、(ソースコードの場合は)ビルド、の後に $3 にインストールしてください。
+tlsexplain tcl TLS モジュールのフォルダを指定します。AMSNがモジュールを見つけられないときに指定してください。¥n(SSL認証に必要です)
+tlsinstallexp aMSN が現在利用しているMSN9にはSSLによるセキュア接続が必要です。SSLを利用するには、TLS モジュールをインストールする必要がありますが、このコンピュータにはインストールされていないようです。このウィザードを使って TLS のダウンロードとインストールを行えます。使用中のシステムを選択すると、自動的に必要なファイルをダウンロードします。
+tlsinstall TLS モジュールインストールウィザード
+tlsinstcompleted TLS モジュールのインストールが完了しました - MSN9 が利用できます。うまく動かない場合は、選択したモジュールが適切でないか、コンパイル済のモジュールがこのシステムでは利用できない可能性があります。
+today 今日
+tomobile モバイルへ
+tools ツール
+tooltips ツールチップを有効にする
+to To
+totalsize Total size
+transnotexists そのファイルはまだ日本語訳されていません
+trayicon Show a status icon in the notification area
+traynotcompiled トレイアイコンプラグインはコンパイルされていません。Plugins/Traydockを確認してください。
+triggers テキストトリガー
+truncatenames1 名前がタイトルやメンバリストの幅よりも長いときは省略表示する
+truncatenames2 名前が会話ウインドウの幅よりも長いときは省略表示する
+truncatenicks 名前がウインドウ幅よりも長いときは省略して表示する
+twonewmail 受信箱に $1 通のメッセージがあります
+type Type
+unblock 禁止解除
+unknown 未確認
+unload Unload
+unselectall 全て選択しない
+uoffline オフライン
+uonline オンライン
+updateonlycurrentlanguage Update only the current language
+update アップデート
+updatesaved Done¥n Saved $1 in $2.
+updating アップデート中
+useasdp 表示画像として使用
+useasregexp Use as a Regular Expression (regexp)
+useother 違うプログラムを使用
+useralreadyonlist 既にリストに追加されています
+userblocked ユーザはオンラインですがあなたをブロックしています。
+userdata ユーザデータ
+userdps User display pictures
+usernotonline メンバがオンラインではありません
+userproperties $1 のユーザプロパティ
+usersettings セッティング
+user メンバ
+useryourself 自分自身とは会話できません
+usesnack Use the Snack library (Tcl internal)
+verifyblocked ブロックしている人を確認する
+version バージョン
+videoconversationrequest You just received a video conversation (bidirectional audio and video) request. This feature is not yet supported by aMSN and has been canceled. However, you can still use the standard webcam conversation.
+view 表示
+viewcontactsby View contacts by
+viewprofile プロフィール閲覧
+viewspace View space items
+volume ボリューム
+wanttosharecam I want to make my webcam available to others
+web Web
+webcam Webカメラ
+webcamcanceled The webcam session with $1 has been canceled
+webcamclosebefcancel You have to cancel all webcam sessions before closing the window
+webcamconfigure Configure Webcam
+webcamconfiguredMac Your webcam settings have been configured
+webcamconfiguredWin You chose the following webcam device : $1
+webcamconfiguredLinux You chose the following webcam settings:¥nWebcam device: $1¥nWebcam channel: $2
+webcamextchecking Checking if webcam extension is loaded ...
+webcamextloaded Webcamsn extension is loaded
+webcamextnotloaded Webcamsn extension is not loaded. You have to compile it.
+webcamextwarn You won't be able to view your contacts' webcams. You may find answers on how to install some extensions on our Wiki:
+webcamfaq Webcamに関するFAQ/Help
+webcamhistory Webカメラのセッションを見る
+webcamhistory2 Webカメラセッション
+webcaminvite $1 invited you to start an webcam session, but aMSN does not support this feature.
+webcaminvitereceived $1 invited you to start a webcam session. Do you want to accept this session?
+webcaminvitereceiving You are invited to start viewing $1 's webcam. Do you want to accept this session?
+webcaminvitesending $1 would like to view your webcam. Do you want to accept this session?
+webcamrejected $1 rejected invitation for webcam session
+webcamrequestreceive Sent request to receive webcam
+webcamrequestsend Sent request to send webcam
+webcamsending List of people you are currently sending webcam¥nClick to cancel
+whatisamsn aMSN is a platform-independent MSN Messenger clone
+whatsize The image you have requested is not the normal display picture¥nsize (96x96) What size would you like the image to be displayed as?
+willjoin $1 が会話に参加するのを待っています
+winkreceived You have received a Wink from $1. This feature is not currently supported by aMSN.
+wintitlenick Display nicks in a tabbed window instead of email
+work 仕事
+wrongfields 項目 "$1" , "$2" あるいは 項目 "$3" が無効です。もしくは、全てが無効です。
+wrongprofileversion プロフィール設定ファイルのバージョンが違います。修復するには $1 ディレクトリを消去するかAMSNをアップデートしてください
+xmmscurrent 現在の曲を表示する
+xmmserr 何も演奏されていないか、xmms-infopipe がインストールされていません。
+xmmssend 現在の曲を送信する
+xoffset X 位置
+xplaces $1 Places
+year 年
+yesblock Yes and block
+yesterday 昨日
+yes Yes
+yoffset Y 位置
+youblocked あなたはブロックされました。
+yousay あなたの発言
+youwant あなたは次のことを望みますか？
+zoom ズーム
