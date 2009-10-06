@@ -1,6 +1,6 @@
 /**
  * ページ内処理
- * last updated : 2009/10/01-00:47:29
+ * last updated : 2009/10/07-01:00:11
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -72,11 +72,11 @@ void page_show_all() {
   printf("----------------------------------------------------------------\n");
 
   // 返り値に構造体の長さを返す
-  cnt = file_read();
+  cnt = info_file_read();
   //printf("cnt : %d\n", cnt);
 
   // メモリの確保に失敗した場合
-  if (cnt == -1) {
+  if (cnt == EXIT_FAILURE) {
     printf("強制終了\n");
     status = PAGE_START;
     return;
@@ -128,39 +128,17 @@ void page_lend_log() {
 void page_equipment_regist() {
   // 定義、初期化
   struct material regist;
-  char yes_no;
 
   printf("備品登録\n");
-  printf("モデルを入力:");
-  scanf("%s", regist.model);
-
-  printf("型名を入力:");
-  scanf("%s", regist.model_name);
+  // 入力受付
+  regist = input_material();
+  // 整形表示
+  format_material(regist);
+  // yes/no
+  if (query_ok_ng() == TRUE) {
+	// ファイルへ書き込み
+  }
   
-  printf("管理番号を入力:");
-  scanf("%s", regist.ctrl_number);
-
-  printf("識別名を入力:");
-  scanf("%s", regist.diff_name);
-
-  printf("備考を入力:");
-  scanf("%s", regist.note);
-
-  printf("その他を入力:");
-  scanf("%s", regist.others);
-
-  printf("------------------------------\n");
-  printf("id:1");
-  printf("モデル:%s\n", regist.model);
-  printf("型名:%s\n", regist.model_name);
-  printf("管理番号:%s\n", regist.ctrl_number);
-  printf("識別名:%s\n", regist.diff_name);
-  printf("備考:%s\n", regist.note);
-  printf("その他:%s\n", regist.others);
-  printf("\n以上の登録内容でよろしいですか。\n");
-  printf("Y/N:");
-  scanf("%c", &yes_no);
-
   status = PAGE_START;
 }
 

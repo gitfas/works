@@ -2,7 +2,7 @@
  * Last Change:2009/09/13 23:07:59.
  */
 #include <stdio.h>
-/* <(.*)>はカレントファイルが検索されない */
+/* <(.*)>はinclude Pathの通らないカレントファイルが検索されない */
 #include "common.h"
 #include "gonzo.h"
 #include "page.h"
