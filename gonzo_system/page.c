@@ -1,6 +1,6 @@
 /**
  * ページ内処理
- * last updated : 2009/10/07-01:00:11
+ * last updated : 2009/10/08-00:58:45
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -74,24 +74,24 @@ void page_show_all() {
   // 返り値に構造体の長さを返す
   cnt = info_file_read();
   //printf("cnt : %d\n", cnt);
-
+  
   // メモリの確保に失敗した場合
   if (cnt == EXIT_FAILURE) {
     printf("強制終了\n");
     status = PAGE_START;
     return;
   }
-
+  
   // 表示
   for (i = 0; i < cnt; i++) {
     printf("%d @ %s @ %s @ %s @ %s @ %s @ %s @\n", 
-	   (mtrl_ptr + i) -> id, 
-	   (mtrl_ptr + i) -> model, 
-	   (mtrl_ptr + i) -> model_name, 
-	   (mtrl_ptr + i) -> ctrl_number, 
-	   (mtrl_ptr + i) -> diff_name, 
-	   (mtrl_ptr + i) -> note, 
-	   (mtrl_ptr + i) -> others);
+		   (mtrl_ptr + i) -> id, 
+		   (mtrl_ptr + i) -> model, 
+		   (mtrl_ptr + i) -> model_name, 
+		   (mtrl_ptr + i) -> ctrl_number, 
+		   (mtrl_ptr + i) -> diff_name, 
+		   (mtrl_ptr + i) -> note, 
+		   (mtrl_ptr + i) -> others);
   }
   printf("\n");
   free(mtrl_ptr);
