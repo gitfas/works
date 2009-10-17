@@ -1,5 +1,8 @@
 /**
- * Last Change:2009/09/13 23:07:59.
+ * @file
+ * メイン処理ファイル
+ * @author Arakawa
+ * @date Last Change:2009/09/13 23:07:59.
  */
 #include <stdio.h>
 /* <(.*)>はinclude Pathの通らないカレントファイルが検索されない */

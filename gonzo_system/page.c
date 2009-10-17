@@ -1,13 +1,14 @@
 /**
- * ページ内処理
- * last updated : 2009/10/08-00:58:45
+ * @file
+ * ページ単位処理ファイル
+ * @author Arakawa
+ * @date last updated : 2009/10/18-02:15:26
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include "common.h"
+#include "material.h"
 #include "page.h"
-
-
 
 /**
  * スタート画面
@@ -72,8 +73,9 @@ void page_show_all() {
   printf("----------------------------------------------------------------\n");
 
   // 返り値に構造体の長さを返す
-  cnt = info_file_read();
+  //  cnt = info_file_read();
   //printf("cnt : %d\n", cnt);
+  cnt = EXIT_FAILURE;
   
   // メモリの確保に失敗した場合
   if (cnt == EXIT_FAILURE) {
@@ -88,8 +90,8 @@ void page_show_all() {
 		   (mtrl_ptr + i) -> id, 
 		   (mtrl_ptr + i) -> model, 
 		   (mtrl_ptr + i) -> model_name, 
-		   (mtrl_ptr + i) -> ctrl_number, 
-		   (mtrl_ptr + i) -> diff_name, 
+		   (mtrl_ptr + i) -> control_id, 
+		   (mtrl_ptr + i) -> alias, 
 		   (mtrl_ptr + i) -> note, 
 		   (mtrl_ptr + i) -> others);
   }
