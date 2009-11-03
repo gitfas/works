@@ -2,7 +2,7 @@
  * @file
  * 共通関数ファイル
  * @author Arakawa
- * @date last updated : 2009/10/18-02:33:42
+ * @date last updated : 2009/10/19-01:39:27
  */
 
 #include <stdio.h>
@@ -26,14 +26,14 @@ int error_malloc(char *string) {
  * @retval int カンマがあった位置を返す。
  * @retval 0 カンマが見つからない場合に返す。
  */
-int cammna_search(char *str) {
+int cammna_search(char *str, int now) {
   char *comma = ",";
   char *place;
   
-  place = strstr(str, comma);
+  place = strstr((str + now), comma);
   //printf("'%s'の中に現れる'%s'という文字列は%d文字目にある.\n", str, comma, place - str + 1);
   if (place == NULL) {
-	return 0;
+	return -1;
   } else {
 	return (int)(place - str + 1);
   }

@@ -2,7 +2,7 @@
  * @file
  * material 構造体用関数ファイル
  * @author Arakawa
- * @date last updated : 2009/10/18-03:21:38
+ * @date last updated : 2009/10/21-02:18:01
  */
 
 #include <stdio.h>
@@ -13,30 +13,40 @@
 
 /**
  * INFO_FILE を読み込み読み込んだ行数を返す。
- * @retval int 成功した場合、読み込んだ行数を返す。
+ * @retval int 成功した場合、EXIT_SUCCESSを返す。
  * @retval EXIT_FAILURE 失敗した場合、EXIT_FAILUREを返す。
  */
 int info_file_read() {
   // 定義、初期化
   FILE *fp;
-  char *buf = (char*) malloc(sizeof(LINE_BUFFER) + 1);
+  char buf[LINE_BUFFER];
   int cnt = 0;
-
+  // グローバル変数のmtrl_ptrを開放
+  if (mtrl_ptr != NULL) {
+	free(mtrl_ptr);
+  }
+  // いらないｍかも
+  mtrl_ptr = (struct material *) malloc(sizeof(struct material));
+  
   // ファイルのオープン
   if ((fp = fopen(INFO_FILE, "r")) == NULL) {
 	printf("[%s]ファイルが開けません。\n", INFO_FILE);
 	return EXIT_FAILURE;
   }
-  
+
   // ファイルを読み込み
   while (fgets(buf, LINE_BUFFER, fp) != NULL) {
+	printf("%s", buf);
+	line_buf_material((char*)buf);
 	
+	memset(buf, (int)NULL_CHAR, sizeof(LINE_BUFFER));
+	cnt++;
   }
-  
+  printf("cnt : %d\n", 1);
   // ファイルを閉じる
   fclose(fp);
   
-  return cnt;
+  return EXIT_SUCCESS;
 }
 
 /**
@@ -111,7 +121,7 @@ struct material input_material() {
  */
 void format_material(struct material tmp_mtrl) {
   printf("------------------------------\n");
-  printf("id:%d", tmp_mtrl.id);
+  printf("id:%d\n", tmp_mtrl.id);
   printf("モデル:%s\n", tmp_mtrl.model);
   printf("型名:%s\n", tmp_mtrl.model_name);
   printf("管理番号:%s\n", tmp_mtrl.control_id);
@@ -133,4 +143,35 @@ void init_material(struct material *mtrl) {
   memset(mtrl -> alias, (int)NULL_CHAR, sizeof(mtrl -> alias));
   memset(mtrl -> note, (int)NULL_CHAR, sizeof(mtrl -> note));
   memset(mtrl -> others, (int)NULL_CHAR, sizeof(mtrl -> others));
+}
+
+struct material line_buf_material(char buf[LINE_BUFFER]) {
+  int place = 0;
+  int place_old = 0;
+  int i = 0;
+  int cnt = 0;
+  char temp_buf 
+  struct material m_buf;
+  union common_material c_mtrl[MATERIAL_NUM] = {
+	m_buf.id, m_buf.model, m_buf.model_name,
+	m_buf.control_id, m_buf.alias, m_buf.note, m_buf.others};
+  
+  while((place >= 0) || (cnt < MATERIAL_NUM)) {
+	place_old = place;
+	place = cammna_search(buf, place);
+	printf(" %d", place);
+	for (i = 0; i < place; i++) {
+	  c_mtrl[cnt] = (cnt == 1)?(int)str;
+	  
+	/*
+	if (cnt < 10){
+	  cnt++;
+	}else{
+	  printf("STOP");
+	  break;
+	}
+	*/
+  }
+  
+  return mtrl_buf;
 }

@@ -2,7 +2,7 @@
  * @file
  * common.c のヘッダーファイル
  * @author Arakawa
- * @date last updated : 2009/10/18-02:55:12
+ * @date last updated : 2009/10/19-01:34:27
  */
 #define INFO_FILE "abc.txt" /**< 機材管理情報ファイル */
 #define TRUE 1 /**< 真 */
@@ -49,7 +49,7 @@ struct material {
 */
 
 /* 共通関数 */
-int cammna_search(char*);
+int cammna_search(char*, int);
 int count_UTF8(const unsigned char *string);
 int query_ok_ng();
 int error_malloc(char *string);

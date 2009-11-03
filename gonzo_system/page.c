@@ -2,7 +2,7 @@
  * @file
  * ページ単位処理ファイル
  * @author Arakawa
- * @date last updated : 2009/10/18-02:15:26
+ * @date last updated : 2009/10/18-20:43:39
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -66,17 +66,17 @@ void page_show_all() {
   // 定義、初期化
   int cnt;
   int i;
-  mtrl_ptr = (struct material *) malloc(sizeof(struct material));
 
   printf("機材一覧を表示します\n");
   printf("|モデル   | 型名     | 管理番号 | 識別名 | 備考     | その他   |\n");
   printf("----------------------------------------------------------------\n");
-
-  // 返り値に構造体の長さを返す
-  //  cnt = info_file_read();
-  //printf("cnt : %d\n", cnt);
-  cnt = EXIT_FAILURE;
   
+  // 返り値に構造体の長さを返す
+  cnt = info_file_read();
+  printf("cnt : %d\n", cnt);
+  cnt = EXIT_FAILURE;
+
+  printf("%d", EXIT_FAILURE);
   // メモリの確保に失敗した場合
   if (cnt == EXIT_FAILURE) {
     printf("強制終了\n");
