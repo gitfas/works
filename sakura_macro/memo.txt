@@ -1,0 +1,5 @@
+and検索： (red.*blue)|(blue.*red)
+or検索： (red)|(blue)
+
+置換前： (.)■+
+置換後： $1
