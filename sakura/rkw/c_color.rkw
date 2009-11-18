@@ -1,0 +1,13 @@
+// 正規表現キーワード Ver1
+RxKey[000]=KW5,/^>.*$/k
+RxKey[001]=KW5,/\/\/!<.*$/k
+RxKey[002]=KW6,/^\?/k
+RxKey[003]=KW7,/^v\b/k
+RxKey[004]=KW8,/^-/k
+RxKey[005]=KW9,/^\+/k
+RxKey[006]=KWA,/^o\b/k
+RxKey[007]=RK6,/^[a-zA-Z_~:\*]+[\s\w~:\*]*(?=\([^;]*$)/k
+RxKey[008]=RKA,/(\b([A-Z_]+[0-9A-Z_]+)\b)/k
+RxKey[009]=RK7,/\x1b/k
+RxKey[010]=RK9,/(\b((->)|[.])\b)|(::)/k
+RxKey[011]=RK8,/([-+<>=*?!%&~\|]+)/k
