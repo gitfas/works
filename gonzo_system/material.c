@@ -2,7 +2,7 @@
  * @file
  * material 構造体用関数ファイル
  * @author Arakawa
- * @date last updated : 2009/10/21-02:18:01
+ * @date last updated : 2009/11/23-02:18:24
  */
 
 #include <stdio.h>
@@ -146,24 +146,27 @@ void init_material(struct material *mtrl) {
 }
 
 struct material line_buf_material(char buf[LINE_BUFFER]) {
-  int place = 0;
+  /*  int place = 0;
   int place_old = 0;
   int i = 0;
   int cnt = 0;
-  char temp_buf 
-  struct material m_buf;
-  union common_material c_mtrl[MATERIAL_NUM] = {
+  char temp_buf;
+	
+	struct material m_buf;
+  */struct material mtrl_buf;
+	/*
+	union common_material c_mtrl[MATERIAL_NUM] = {
 	m_buf.id, m_buf.model, m_buf.model_name,
 	m_buf.control_id, m_buf.alias, m_buf.note, m_buf.others};
-  
+	
   while((place >= 0) || (cnt < MATERIAL_NUM)) {
 	place_old = place;
 	place = cammna_search(buf, place);
 	printf(" %d", place);
 	for (i = 0; i < place; i++) {
 	  c_mtrl[cnt] = (cnt == 1)?(int)str;
-	  
-	/*
+	  }
+	
 	if (cnt < 10){
 	  cnt++;
 	}else{
@@ -171,7 +174,7 @@ struct material line_buf_material(char buf[LINE_BUFFER]) {
 	  break;
 	}
 	*/
-  }
+	//	}
   
   return mtrl_buf;
 }

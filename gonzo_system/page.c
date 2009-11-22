@@ -2,54 +2,60 @@
  * @file
  * ページ単位処理ファイル
  * @author Arakawa
- * @date last updated : 2009/10/18-20:43:39
+ * @date last updated : 2009/11/23-03:22:47
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include "common.h"
 #include "material.h"
+#include "renewlog.h"
 #include "page.h"
 
 /**
  * スタート画面
  */
 void page_start() {
-  printf("\t+- 備品管理システム -----------+\n");
-  printf("\t|  1. %s                 |\n", MENU_LIST_NAME1);
-  printf("\t|  2. %s         |\n", MENU_LIST_NAME2);
-  printf("\t|  3. %s                 |\n", MENU_LIST_NAME3);
-  printf("\t|  4. %s                 |\n", MENU_LIST_NAME4);
-  printf("\t|  5. %s                 |\n", MENU_LIST_NAME5);
-  printf("\t|  6. %s                 |\n", MENU_LIST_NAME6);
-  printf("\t+------------------------------+\n\n");
-  
+  char page_name[][PRINT_FORMAT_LEN] = {
+	MENU_LIST1_NAME1,
+	MENU_LIST1_NAME2,
+	MENU_LIST1_NAME3,
+	MENU_LIST1_NAME4,
+	MENU_LIST1_NAME5,
+	MENU_LIST1_NAME6
+  }; /**< メニューリストテーブル */
+
+  /* メニューを整形出力 */
+  format_print_title(MENU_TITLE1_NAME);
+  format_print_menu(page_name, (sizeof(page_name)/sizeof(page_name[0])));
+  format_print_line();
+
   int num = 0;
   printf("SELECT >> "); 
   scanf("%d", &num); 
   
   switch (num) {
   case 1:
-    printf("[%s] を選択\n", MENU_LIST_NAME1);
+    printf("[%s] を選択\n", MENU_LIST1_NAME1);
     status = PAGE_SHOW_ALL;
     break;
   case 2:
-    printf("[%s] を選択\n", MENU_LIST_NAME2);
+    printf("[%s] を選択\n", MENU_LIST1_NAME2);
     status = PAGE_LEND_RENEW;
     break;
   case 3:
-    printf("[%s] を選択\n", MENU_LIST_NAME3);
+    printf("[%s] を選択\n", MENU_LIST1_NAME3);
     status = PAGE_LEND_LOG;
     break;
   case 4:
-    printf("[%s] を選択\n", MENU_LIST_NAME4);
+    printf("[%s] を選択\n", MENU_LIST1_NAME4);
     status = PAGE_EQUIPMENT_REGIST;
     break;
   case 5:
-    printf("[%s] を選択\n", MENU_LIST_NAME5);
+    printf("[%s] を選択\n", MENU_LIST1_NAME5);
     status = PAGE_EQUIPMENT_DELETE;
     break;
   case 6:
-    printf("[%s] を選択\n", MENU_LIST_NAME6);
+    printf("[%s] を選択\n", MENU_LIST1_NAME6);
     status = PAGE_EQUIPMENT_EDIT;
     break;
     

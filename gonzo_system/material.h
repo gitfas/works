@@ -2,11 +2,11 @@
  * @file
  * material.c のヘッダーファイル
  * @author Arakawa
- * @date last updated : 2009/10/20-01:39:44
+ * @date last updated : 2009/11/23-01:12:35
  */
 
 /* マクロ定義 */
-#define MATERIAL_NUM 7 /**< material構造体の要素数 */
+#define INFO_FILE "abc.txt" /**< 機材管理情報ファイル */
 
 /* グローバル変数 */
 struct material *mtrl_ptr; /**< 保管データ */
@@ -24,6 +24,8 @@ struct material{
   char *note; /**< コメント */
   char *others; /**< その他 */
 };
+#define MATERIAL_NUM 7 /**< material構造体の要素数 */
+
 
 /**
  * @union common_material
@@ -34,7 +36,7 @@ union common_materil {
   char *str; /**< 文字列 */
 };
 
-/* プロトタイプ宣言 */
+/* 関数プロトタイプ宣言 */
 int info_file_read(void);
 int info_file_write_add(struct material);
 void format_material(struct material);
@@ -42,5 +44,4 @@ struct material input_material();
 int* gen_int();
 char* gen_char();
 void init_material(struct material*);
-//struct material line_buf_material(char line[LINE_BUFFER]);
 struct material line_buf_material(char*);

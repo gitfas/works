@@ -5,8 +5,8 @@
  * @date Last Change:2009/09/13 23:07:59.
  */
 
-/* 関数ポインタ */
-void (*ptr)();
+/* static 変数 */
+static void (*ptr)();	 /**< ページ処理関数ポインタ */
+/* 関数プロトタイプ */
+static void init();		 /**< 初期化関数 */
 
-/* 関数プロトタイプ宣言 */
-void init();

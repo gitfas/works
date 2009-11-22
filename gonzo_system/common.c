@@ -2,13 +2,61 @@
  * @file
  * 共通関数ファイル
  * @author Arakawa
- * @date last updated : 2009/10/19-01:39:27
+ * @date last updated : 2009/11/23-03:23:39
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "common.h"
+
+
+/**
+ * タイトル文字列を整形出力する(テキスト)
+ * @param char* string タイトル文字列
+ */
+void format_print_title(char string[PRINT_FORMAT_LEN]) {
+  int i;
+
+  printf("  +----- %s ", string);
+  for(i = 0; i < (PRINT_FORMAT_LEN - strlen(string)) + 2; i++) {
+	printf("-");
+  }
+  printf("+\n");
+}
+
+/**
+ * メニュー文字列を整形出力する(テキスト)
+ * @param char string[][PRINT_FORMAT_LEN] メニュー文字列
+ * @param int cnt メニューの数
+ */
+void format_print_menu(char string[][PRINT_FORMAT_LEN], int cnt) {
+  int i,j;
+#if DEBUG_PRINT
+  printf("メニューの数:%d\n", cnt);
+#endif
+
+  for(i = 0; i < cnt; i++) {
+	printf("  | %d. %s ", (i + 1), string[i]);
+	for(j = 0; j < (PRINT_FORMAT_LEN - (strlen(string[i])/3*2) - 4); j++) {
+	  printf(" ");
+	}
+	printf("|\n");
+  }
+}
+
+/**
+ * 整形出力のラインを出力する(テキスト)
+ */
+void format_print_line() {
+  int i;
+  
+  printf("  +");
+  for(i = 0; i < PRINT_FORMAT_LEN + 1; i++) {
+	printf("-");
+  }
+  printf("+\n");
+}
 
 /**
  * mallocでエラーが出た場合の文字列を出力する。

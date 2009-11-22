@@ -5,13 +5,13 @@
  * @date Last Change:2009/09/13 23:07:59.
  */
 #include <stdio.h>
-/* <(.*)>はinclude Pathの通らないカレントファイルが検索されない */
 #include "common.h"
 #include "gonzo.h"
 #include "page.h"
 
 /**
  * メイン処理
+ * @return int 処理結果を返す。
  */
 int main () {
   int while_flag = TRUE;
@@ -52,7 +52,7 @@ int main () {
 /**
  * 初期化
  */
-void init() {
+static void init() {
   status = PAGE_START;
   ptr = NULL;
 }
