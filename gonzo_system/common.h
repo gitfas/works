@@ -3,7 +3,7 @@
  * common.c のヘッダーファイル
  * 外部に対して全て公開する。
  * @author Arakawa
- * @date last updated : 2009/11/23-03:23:23
+ * @date last updated : 2009/11/23-19:57:15
  */
 /* コンパイルスイッチ */
 #define DEBUG_PRINT 0		 /**< デバッグ用コンパイルスイッチ */
@@ -18,7 +18,6 @@
 #define STRING_BUFFER 1024	 /**< 1要素の文字列の最大バッファ */
 #define LINE_BUFFER 1024	 /**< 1行の最大読み取りバッファ */
 #define INIT_INT -1			 /**< INTを初期化する際の値 */
-#define NULL_CHAR "\0"		 /**< 終端文字 */
 #define PRINT_FORMAT_LEN 40	 /**< タイトル、メニューの最大バイト数 */
 
 /* 共通関数 */

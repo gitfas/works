@@ -2,7 +2,7 @@
  * @file
  * ページ単位処理ファイル
  * @author Arakawa
- * @date last updated : 2009/11/23-03:22:47
+ * @date last updated : 2009/11/23-18:10:03
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,7 +60,7 @@ void page_start() {
     break;
     
   default :
-    printf("想定外の番号が入力されています");
+    printf("1-6以外の番号が入力されています\n");
     break;
   }
 }
@@ -71,14 +71,14 @@ void page_start() {
 void page_show_all() {
   // 定義、初期化
   int cnt;
-  int i;
+  //int i;
 
   printf("機材一覧を表示します\n");
   printf("|モデル   | 型名     | 管理番号 | 識別名 | 備考     | その他   |\n");
   printf("----------------------------------------------------------------\n");
   
   // 返り値に構造体の長さを返す
-  cnt = info_file_read();
+  cnt = material_file_read();
   printf("cnt : %d\n", cnt);
   cnt = EXIT_FAILURE;
 
@@ -91,6 +91,7 @@ void page_show_all() {
   }
   
   // 表示
+  /*
   for (i = 0; i < cnt; i++) {
     printf("%d @ %s @ %s @ %s @ %s @ %s @ %s @\n", 
 		   (mtrl_ptr + i) -> id, 
@@ -101,9 +102,9 @@ void page_show_all() {
 		   (mtrl_ptr + i) -> note, 
 		   (mtrl_ptr + i) -> others);
   }
+  */
   printf("\n");
   free(mtrl_ptr);
-  // スタートページへ遷移
   status = PAGE_START;
 }
 
