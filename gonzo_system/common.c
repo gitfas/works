@@ -2,12 +2,13 @@
  * @file
  * 共通関数ファイル
  * @author Arakawa
- * @date last updated : 2009/11/23-03:23:39
+ * @date last updated : 2009/11/24-00:17:14
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "common.h"
 
 
@@ -148,4 +149,16 @@ int query_ok_ng() {
   }
  LOOP_OUT:
   return flag;
+}
+
+/**
+ * 整数の入力受付を行う。
+ * @param int* 入力を格納するポインタ
+ */
+void common_int_input(int* num) {
+  //書き直し予定。オーバーフローチェック、入力内容確認判定
+  //  do {
+	printf("[入力受付：整数] < "); 
+	scanf("%d", num);
+	//  } while (num > 0);
 }

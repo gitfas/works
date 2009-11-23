@@ -2,7 +2,7 @@
  * @file
  * ページ単位処理ファイル
  * @author Arakawa
- * @date last updated : 2009/11/23-18:10:03
+ * @date last updated : 2009/11/24-00:02:46
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +15,7 @@
  * スタート画面
  */
 void page_start() {
+  int num;
   char page_name[][PRINT_FORMAT_LEN] = {
 	MENU_LIST1_NAME1,
 	MENU_LIST1_NAME2,
@@ -23,15 +24,13 @@ void page_start() {
 	MENU_LIST1_NAME5,
 	MENU_LIST1_NAME6
   }; /**< メニューリストテーブル */
-
+  
   /* メニューを整形出力 */
   format_print_title(MENU_TITLE1_NAME);
   format_print_menu(page_name, (sizeof(page_name)/sizeof(page_name[0])));
   format_print_line();
-
-  int num = 0;
-  printf("SELECT >> "); 
-  scanf("%d", &num); 
+  
+  common_int_input(&num);
   
   switch (num) {
   case 1:

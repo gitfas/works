@@ -3,7 +3,7 @@
  * common.c のヘッダーファイル
  * 外部に対して全て公開する。
  * @author Arakawa
- * @date last updated : 2009/11/23-19:57:15
+ * @date last updated : 2009/11/24-00:03:40
  */
 /* コンパイルスイッチ */
 #define DEBUG_PRINT 0		 /**< デバッグ用コンパイルスイッチ */
@@ -28,3 +28,4 @@ int error_malloc(char *string);
 void format_print_title(char string[PRINT_FORMAT_LEN]);
 void format_print_menu(char string[][PRINT_FORMAT_LEN], int cnt);
 void format_print_line();
+void common_int_input(int* num);
