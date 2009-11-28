@@ -2,7 +2,7 @@
  * @file
  * 共通関数ファイル
  * @author Arakawa
- * @date last updated : 2009/11/24-00:17:14
+ * @date last updated : 2009/11/29-02:49:18
  */
 
 #include <stdio.h>
@@ -156,9 +156,38 @@ int query_ok_ng() {
  * @param int* 入力を格納するポインタ
  */
 void common_int_input(int* num) {
-  //書き直し予定。オーバーフローチェック、入力内容確認判定
-  //  do {
-	printf("[入力受付：整数] < "); 
-	scanf("%d", num);
-	//  } while (num > 0);
+  /* 定義、初期化 */
+  char input[256];
+  int flag;
+  flag = FALSE;
+  
+  printf("入力受付[整数]：");
+  fgets(input, sizeof(input), stdin);
+  fflush(stdin);
+  
+  *num = atoi(input);
+}
+
+/**
+ * 文字列の入力受付を行う。
+ * 255バイトまで入力可能。
+ * @param char* 入力を格納するポインタ
+ */
+void common_string_input(char* string) {
+  /* 定義、初期化 */
+  /* 書きかけ、　入力を受け取った後のエラー処理がまだ。
+  char input[256];
+  int flag;
+  flag = FALSE;
+  
+  printf("入力受付[文字列]：");
+  fgets(input, sizeof(input), stdin);
+  fflush(stdin);
+
+  strcpy(*string, input, 256);
+  if (*(string + 256 - 1) != '\0') {
+	count_UTF8((unsigned char)*string);
+	*(string + 256 - 1) = '\0';
+  }
+  */
 }

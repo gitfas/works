@@ -2,7 +2,7 @@
  * @file
  * ページ単位処理ファイル
  * @author Arakawa
- * @date last updated : 2009/11/24-00:02:46
+ * @date last updated : 2009/11/29-02:25:45
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,36 +31,34 @@ void page_start() {
   format_print_line();
   
   common_int_input(&num);
-  
+
   switch (num) {
   case 1:
-    printf("[%s] を選択\n", MENU_LIST1_NAME1);
     status = PAGE_SHOW_ALL;
     break;
   case 2:
-    printf("[%s] を選択\n", MENU_LIST1_NAME2);
     status = PAGE_LEND_RENEW;
     break;
   case 3:
-    printf("[%s] を選択\n", MENU_LIST1_NAME3);
     status = PAGE_LEND_LOG;
     break;
   case 4:
-    printf("[%s] を選択\n", MENU_LIST1_NAME4);
     status = PAGE_EQUIPMENT_REGIST;
     break;
   case 5:
-    printf("[%s] を選択\n", MENU_LIST1_NAME5);
     status = PAGE_EQUIPMENT_DELETE;
     break;
   case 6:
-    printf("[%s] を選択\n", MENU_LIST1_NAME6);
     status = PAGE_EQUIPMENT_EDIT;
     break;
-    
   default :
-    printf("1-6以外の番号が入力されています\n");
     break;
+  }
+
+  if ((num > 0) && (num <= (sizeof(page_name)/sizeof(page_name[0])))) {
+	printf("[%s] を選択\n", &page_name[num - 1][0]);
+  } else {
+    printf("1-6以外の番号が入力されています\n");
   }
 }
 
@@ -70,7 +68,6 @@ void page_start() {
 void page_show_all() {
   // 定義、初期化
   int cnt;
-  //int i;
 
   printf("機材一覧を表示します\n");
   printf("|モデル   | 型名     | 管理番号 | 識別名 | 備考     | その他   |\n");
@@ -89,19 +86,6 @@ void page_show_all() {
     return;
   }
   
-  // 表示
-  /*
-  for (i = 0; i < cnt; i++) {
-    printf("%d @ %s @ %s @ %s @ %s @ %s @ %s @\n", 
-		   (mtrl_ptr + i) -> id, 
-		   (mtrl_ptr + i) -> model, 
-		   (mtrl_ptr + i) -> model_name, 
-		   (mtrl_ptr + i) -> control_id, 
-		   (mtrl_ptr + i) -> alias, 
-		   (mtrl_ptr + i) -> note, 
-		   (mtrl_ptr + i) -> others);
-  }
-  */
   printf("\n");
   free(mtrl_ptr);
   status = PAGE_START;
