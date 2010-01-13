@@ -2,7 +2,7 @@
  * @file
  * 共通関数ファイル
  * @author Arakawa
- * @date last updated : 2009/11/29-02:49:18
+ * @date last updated : 2010/01/10-17:28:10
  */
 
 #include <stdio.h>
@@ -17,13 +17,13 @@
  * @param char* string タイトル文字列
  */
 void format_print_title(char string[PRINT_FORMAT_LEN]) {
-  int i;
+	int i;
 
-  printf("  +----- %s ", string);
-  for(i = 0; i < (PRINT_FORMAT_LEN - strlen(string)) + 2; i++) {
-	printf("-");
-  }
-  printf("+\n");
+	printf("  +----- %s ", string);
+	for(i = 0; i < (PRINT_FORMAT_LEN - strlen(string)) + 2; i++) {
+		printf("-");
+	}
+	printf("+\n");
 }
 
 /**
@@ -32,31 +32,31 @@ void format_print_title(char string[PRINT_FORMAT_LEN]) {
  * @param int cnt メニューの数
  */
 void format_print_menu(char string[][PRINT_FORMAT_LEN], int cnt) {
-  int i,j;
+	int i,j;
 #if DEBUG_PRINT
-  printf("メニューの数:%d\n", cnt);
+	printf("メニューの数:%d\n", cnt);
 #endif
 
-  for(i = 0; i < cnt; i++) {
-	printf("  | %d. %s ", (i + 1), string[i]);
-	for(j = 0; j < (PRINT_FORMAT_LEN - (strlen(string[i])/3*2) - 4); j++) {
-	  printf(" ");
+	for(i = 0; i < cnt; i++) {
+		printf("  | %d. %s ", (i + 1), string[i]);
+		for(j = 0; j < (PRINT_FORMAT_LEN - (strlen(string[i])/3*2) - 4); j++) {
+			printf(" ");
+		}
+		printf("|\n");
 	}
-	printf("|\n");
-  }
 }
 
 /**
  * 整形出力のラインを出力する(テキスト)
  */
 void format_print_line() {
-  int i;
-  
-  printf("  +");
-  for(i = 0; i < PRINT_FORMAT_LEN + 1; i++) {
-	printf("-");
-  }
-  printf("+\n");
+	int i;
+	
+	printf("  +");
+	for(i = 0; i < PRINT_FORMAT_LEN + 1; i++) {
+		printf("-");
+	}
+	printf("+\n");
 }
 
 /**
@@ -65,8 +65,8 @@ void format_print_line() {
  * @return int EXIT_FAILUREを返す。
  */
 int error_malloc(char *string) {
-  printf("%s内でメモリ確保に失敗しました。\n", string);
-  return EXIT_FAILURE;
+	printf("%s内でメモリ確保に失敗しました。\n", string);
+	return EXIT_FAILURE;
 }
 
 /**
@@ -76,16 +76,16 @@ int error_malloc(char *string) {
  * @retval 0 カンマが見つからない場合に返す。
  */
 int cammna_search(char *str, int now) {
-  char *comma = ",";
-  char *place;
-  
-  place = strstr((str + now), comma);
-  //printf("'%s'の中に現れる'%s'という文字列は%d文字目にある.\n", str, comma, place - str + 1);
-  if (place == NULL) {
-	return -1;
-  } else {
-	return (int)(place - str + 1);
-  }
+	char *comma = ",";
+	char *place;
+	
+	place = strstr((str + now), comma);
+	//printf("'%s'の中に現れる'%s'という文字列は%d文字目にある.\n", str, comma, place - str + 1);
+	if (place == NULL) {
+		return -1;
+	} else {
+		return (int)(place - str + 1);
+	}
 }
 
 /**
@@ -94,32 +94,32 @@ int cammna_search(char *str, int now) {
  * @return int カウントした文字数を返す。
  */
 int count_UTF8(const unsigned char *string) {
-  int len = 0;
-  
-  while(*string) {
-    if (*string < 0x1f || *string == 0x7f) {
-      //制御コード
-    } else if (*string <= 0x7f) {
-      ++len; // 1バイト文字
-    } else if (*string <= 0xbf) {
-      // 文字の続き
-    } else if (*string <= 0xdf) {
-      ++len; // 2バイト文字
-    } else if (*string <= 0xef) {
-      ++len; // 3バイト文字
-    } else if (*string <= 0xf7) {
-      ++len; // 4バイト文字
-    } else if (*string <= 0xfb) {
-      ++len; // 5バイト文字
-    } else if (*string <= 0xfd) {
-      ++len; // 6バイト文字
-    } else {
-      // 使われていない
-    }
-    string++;
-  }
-  
-  return len;
+	int len = 0;
+	
+	while(*string) {
+		if (*string < 0x1f || *string == 0x7f) {
+			//制御コード
+		} else if (*string <= 0x7f) {
+			++len; // 1バイト文字
+		} else if (*string <= 0xbf) {
+			// 文字の続き
+		} else if (*string <= 0xdf) {
+			++len; // 2バイト文字
+		} else if (*string <= 0xef) {
+			++len; // 3バイト文字
+		} else if (*string <= 0xf7) {
+			++len; // 4バイト文字
+		} else if (*string <= 0xfb) {
+			++len; // 5バイト文字
+		} else if (*string <= 0xfd) {
+			++len; // 6バイト文字
+		} else {
+			// 使われていない
+		}
+		string++;
+	}
+	
+	return len;
 }
 
 /**
@@ -128,27 +128,27 @@ int count_UTF8(const unsigned char *string) {
  * @retval FALSE "N","n"を入力した場合に返す。
  */
 int query_ok_ng() {
-  // 定義、初期化
-  int c;
-  int flag;
-  
-  printf("以上の登録内容でよろしいですか。Y/N:");
-  while((c = getchar()) != EOF) {
-	switch(c) {
-	case YES:
-	case yes:
-	  flag = TRUE;
-	  goto LOOP_OUT;
-	case NO:
-	case no:
-	  return FALSE;
-	  goto LOOP_OUT;
-	default:
-	  printf("Y/N を入力してください。\n");
+	// 定義、初期化
+	int c;
+	int flag;
+
+	printf("以上の登録内容でよろしいですか。Y/N:");
+	while((c = getchar()) != EOF) {
+	  switch(c) {
+	  case YES:
+	  case yes:
+		  flag = TRUE;
+		  goto LOOP_OUT;
+	  case NO:
+	  case no:
+		  return FALSE;
+		  goto LOOP_OUT;
+	  default:
+		  printf("Y/N を入力してください。\n");
+	  }
 	}
-  }
- LOOP_OUT:
-  return flag;
+LOOP_OUT:
+	return flag;
 }
 
 /**
@@ -156,16 +156,16 @@ int query_ok_ng() {
  * @param int* 入力を格納するポインタ
  */
 void common_int_input(int* num) {
-  /* 定義、初期化 */
-  char input[256];
-  int flag;
-  flag = FALSE;
-  
-  printf("入力受付[整数]：");
-  fgets(input, sizeof(input), stdin);
-  fflush(stdin);
-  
-  *num = atoi(input);
+	/* 定義、初期化 */
+	char input[256];
+	int flag;
+	flag = FALSE;
+	
+	printf("入力受付[整数]：");
+	fgets(input, sizeof(input), stdin);
+	fflush(stdin);
+	
+	*num = atoi(input);
 }
 
 /**
@@ -174,20 +174,28 @@ void common_int_input(int* num) {
  * @param char* 入力を格納するポインタ
  */
 void common_string_input(char* string) {
-  /* 定義、初期化 */
-  /* 書きかけ、　入力を受け取った後のエラー処理がまだ。
-  char input[256];
-  int flag;
-  flag = FALSE;
-  
-  printf("入力受付[文字列]：");
-  fgets(input, sizeof(input), stdin);
-  fflush(stdin);
-
-  strcpy(*string, input, 256);
-  if (*(string + 256 - 1) != '\0') {
-	count_UTF8((unsigned char)*string);
-	*(string + 256 - 1) = '\0';
-  }
-  */
+	/* 定義、初期化 */
+	/* 書きかけ、　入力を受け取った後のエラー処理がまだA。*/
+	char input[256];
+	int flag, cnt;
+	flag = FALSE;
+	
+	printf("入力受付[文字列]：");
+	fgets(input, sizeof(input), stdin);
+	fflush(stdin);
+	
+	if (input[256 - 2] != '\0') {
+		cnt = 256 - 2;
+		while (1) {
+			if (input[cnt] <= 0x7f) {
+				break; // 1バイト文字,制御コード
+			} else if (input[cnt] <= 0xbf) {
+				input[cnt--] = '\0';
+			} else if (input[cnt] <= 0xfd) {
+				input[cnt--] = '\0';
+				break; // 2-6バイト文字
+			}
+		}
+	}
+	strncpy(string, input, 256);
 }

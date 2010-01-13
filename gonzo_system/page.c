@@ -2,7 +2,7 @@
  * @file
  * ページ単位処理ファイル
  * @author Arakawa
- * @date last updated : 2009/11/29-02:25:45
+ * @date last updated : 2009/12/21-01:15:55
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -144,7 +144,7 @@ void page_equipment_delete() {
 
 /**
  * 備品編集
- */
+V */
 void page_equipment_edit() {
   printf("備品編集");
   status = PAGE_START;

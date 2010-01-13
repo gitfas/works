@@ -2,7 +2,7 @@
  * @file
  * material 構造体用関数ファイル
  * @author Arakawa
- * @date last updated : 2009/11/23-20:30:56
+ * @date last updated : 2009/12/20-23:43:24
  */
 
 #include <stdio.h>
@@ -92,10 +92,12 @@ struct material input_material() {
   // 定義、初期化
   struct material tmp_mtrl;
 
+  tmp_mtrl.model 
   // IDを決定が漏れてる
   tmp_mtrl.id = 10;
   
   printf("モデルを入力:");
+
   scanf("%s", tmp_mtrl.model);
   
   printf("型名を入力:");

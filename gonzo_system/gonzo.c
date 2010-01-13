@@ -2,7 +2,7 @@
  * @file
  * メイン処理ファイル
  * @author Arakawa
- * @date Last Change:2009/09/13 23:07:59.
+ * @date Last Change:2010/01/11 00:36:08.
  */
 #include <stdio.h>
 #include "common.h"
