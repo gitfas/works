@@ -1,8 +1,8 @@
 /**
  * @file
- * material æ§‹é€ ä½“ç”¨é–¢æ•°ãƒ•ã‚¡ã‚¤ãƒ«
+ * material \‘¢‘Ì—pŠÖ”ƒtƒ@ƒCƒ‹
  * @author Arakawa
- * @date last updated : 2009/12/20-23:43:24
+ * @date last updated : 2010/01/31-00:17:48
  */
 
 #include <stdio.h>
@@ -12,206 +12,225 @@
 #include "material.h"
 
 /**
- * MATERIAL_FILE ã‚’èª­ã¿è¾¼ã¿èª­ã¿è¾¼ã‚“ã è¡Œæ•°ã‚’è¿”ã™ã€‚
- * @retval int æˆåŠŸã—ãŸå ´åˆã€EXIT_SUCCESSã‚’è¿”ã™ã€‚
- * @retval EXIT_FAILURE å¤±æ•—ã—ãŸå ´åˆã€EXIT_FAILUREã‚’è¿”ã™ã€‚
+ * MATERIAL_FILE ‚ğ“Ç‚İ‚İ“Ç‚İ‚ñ‚¾s”‚ğ•Ô‚·B
+ * @retval int ¬Œ÷‚µ‚½ê‡AEXIT_SUCCESS‚ğ•Ô‚·B
+ * @retval EXIT_FAILURE ¸”s‚µ‚½ê‡AEXIT_FAILURE‚ğ•Ô‚·B
  */
 int material_file_read() {
-  // å®šç¾©ã€åˆæœŸåŒ–
-  FILE *fp;
-  char buf[LINE_BUFFER];
-  int cnt = 0;
-  
-  if (mtrl_ptr != NULL) {
-	free(mtrl_ptr);
-  }
-  mtrl_ptr = (struct material *) malloc(sizeof(struct material));
-  
-  // ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚ªãƒ¼ãƒ—ãƒ³
-  if ((fp = fopen(MATERIAL_FILE, "r")) == NULL) {
-	printf("[%s]ãƒ•ã‚¡ã‚¤ãƒ«ãŒé–‹ã‘ã¾ã›ã‚“ã€‚\n", MATERIAL_FILE);
-	return EXIT_FAILURE;
-  }
+	// ’è‹`A‰Šú‰»
+	FILE *fp;
+	char buf[LINE_BUFFER];
+	int cnt = 0;
 
-  // ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã¿
-  while (fgets(buf, LINE_BUFFER, fp) != NULL) {
-	printf("%s", buf);
-	line_buf_material((char*)buf);
-	
-	memset(buf, '\0', sizeof(LINE_BUFFER));
-	cnt++;
-  }
-  printf("cnt : %d\n", 1);
-  // ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‰ã˜ã‚‹
-  fclose(fp);
-  
-  return EXIT_SUCCESS;
+	if (mtrl_ptr != NULL) {
+		free(mtrl_ptr);
+	}
+	mtrl_ptr = (struct material *) malloc(sizeof(struct material));
+
+	// ƒtƒ@ƒCƒ‹‚ÌƒI[ƒvƒ“
+	if ((fp = fopen(MATERIAL_FILE, "r")) == NULL) {
+		printf("[%s]ƒtƒ@ƒCƒ‹‚ªŠJ‚¯‚Ü‚¹‚ñB\n", MATERIAL_FILE);
+		return EXIT_FAILURE;
+	}
+
+	// ƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚İ
+	while (fgets(buf, LINE_BUFFER, fp) != NULL) {
+		printf("%s", buf);
+		line_buf_material((char*)buf);
+
+		memset(buf, '\0', sizeof(LINE_BUFFER));
+		cnt++;
+	}
+	printf("cnt : %d\n", 1);
+	// ƒtƒ@ƒCƒ‹‚ğ•Â‚¶‚é
+	fclose(fp);
+
+	return EXIT_SUCCESS;
 }
 
 /**
- * material ã‚’ãƒ•ã‚¡ã‚¤ãƒ«ã¸è¿½åŠ æ›¸ãè¾¼ã¿ã™ã‚‹ã€‚
- * @retval EXIT_SUCCESS è¿½åŠ æ›¸ãè¾¼ã¿ã«æˆåŠŸã‚’è¿”ã™ã€‚
- * @retval EXIT_FAILURE è¿½åŠ æ›¸ãè¾¼ã¿ã«å¤±æ•—ã‚’è¿”ã™ã€‚
+ * material ‚ğƒtƒ@ƒCƒ‹‚Ö’Ç‰Á‘‚«‚İ‚·‚éB
+ * @retval EXIT_SUCCESS ’Ç‰Á‘‚«‚İ‚É¬Œ÷‚ğ•Ô‚·B
+ * @retval EXIT_FAILURE ’Ç‰Á‘‚«‚İ‚É¸”s‚ğ•Ô‚·B
  */
 int material_file_write_add(struct material tmp_mtrl) {
-  // å®šç¾©ã€åˆæœŸåŒ–
-  FILE *fp;
-  int i;
-  char *joint_str[] = {
-	(char *)tmp_mtrl.id,
-	tmp_mtrl.model,
-	tmp_mtrl.model_name,
-	tmp_mtrl.control_id,
-	tmp_mtrl.alias,
-	tmp_mtrl.status,
-	tmp_mtrl.place,
-	tmp_mtrl.blame,
-	tmp_mtrl.date
-  };
-  char jointed[sizeof(struct material)];
+	// ’è‹`A‰Šú‰»
+	FILE *fp;
+	int i;
+	char *joint_str[] = {
+		(char *)tmp_mtrl.id,
+		tmp_mtrl.model,
+		tmp_mtrl.model_name,
+		tmp_mtrl.control_id,
+		tmp_mtrl.alias,
+		tmp_mtrl.status,
+		tmp_mtrl.place,
+		tmp_mtrl.blame,
+		tmp_mtrl.date
+	};
+	char jointed[sizeof(struct material)];
 
-  if ((fp = fopen(MATERIAL_FILE, "a")) == NULL) {
-    printf("[%s]ãƒ•ã‚¡ã‚¤ãƒ«ãŒé–‹ã‘ã¾ã›ã‚“ã€‚\n", MATERIAL_FILE);
-	return EXIT_FAILURE;
-  }
+	if ((fp = fopen(MATERIAL_FILE, "a")) == NULL) {
+		printf("[%s]ƒtƒ@ƒCƒ‹‚ªŠJ‚¯‚Ü‚¹‚ñB\n", MATERIAL_FILE);
+		return EXIT_FAILURE;
+	}
 
-  for (i = 0; i < 7; i++) {
-	strcat(jointed, joint_str[i]);
-  }
-  fputs(jointed, fp);
-  fclose(fp);
+	for (i = 0; i < 7; i++) {
+		strcat(jointed, joint_str[i]);
+	}
+	fputs(jointed, fp);
+	fclose(fp);
 
-  return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 }
 
 /**
- * å…¥åŠ›ã‚’è¦æ±‚ã—ã¦ material ã«æ ¼ç´ã™ã‚‹ã€‚
- * @return struct material å…¥åŠ›ã‚’æ§‹é€ ä½“ã«ä»£å…¥ã—ã¦è¿”ã™ã€‚
+ * “ü—Í‚ğ—v‹‚µ‚Ä material ‚ÉŠi”[‚·‚éB
+ * @return struct material “ü—Í‚ğ\‘¢‘Ì‚É‘ã“ü‚µ‚Ä•Ô‚·B
  */
-struct material input_material() {
-  // å®šç¾©ã€åˆæœŸåŒ–
-  struct material tmp_mtrl;
+struct material input_material(void) {
+	// ’è‹`A‰Šú‰»
+	struct material tmp_mtrl;
+	// ƒ|ƒCƒ“ƒ^‚É‘Î‚µ‚Ä—Ìˆæ‰Šú‰»AÀs
+	init_material(&tmp_mtrl);
 
-  tmp_mtrl.model 
-  // IDã‚’æ±ºå®šãŒæ¼ã‚Œã¦ã‚‹
-  tmp_mtrl.id = 10;
-  
-  printf("ãƒ¢ãƒ‡ãƒ«ã‚’å…¥åŠ›:");
+	// ID‚ğŒˆ’è‚ª˜R‚ê‚Ä‚é
+	tmp_mtrl.id = 10;
 
-  scanf("%s", tmp_mtrl.model);
-  
-  printf("å‹åã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.model_name);
-  
-  printf("ç®¡ç†ç•ªå·ã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.control_id);
-  
-  printf("è­˜åˆ¥åã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.alias);
-  
-  printf("çŠ¶æ…‹ã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.status);
-  
-  printf("ç¾åœ¨åœ°ã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.place);
-  
-  printf("è²¬ä»»è€…ã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.blame);
-  
-  printf("æœ€çµ‚æ›´æ–°æ—¥æ™‚ã‚’å…¥åŠ›:");
-  scanf("%s", tmp_mtrl.date);
-  
-  return tmp_mtrl;
+	printf("ƒ‚ƒfƒ‹‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.model);
+
+	printf("Œ^–¼‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.model_name);
+
+	printf("ŠÇ—”Ô†‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.control_id);
+
+	printf("¯•Ê–¼‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.alias);
+
+	printf("ó‘Ô‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.status);
+
+	printf("Œ»İ’n‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.place);
+
+	printf("Ó”CÒ‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.blame);
+
+	printf("ÅIXV“ú‚ğ“ü—Í:");
+	common_string_input(tmp_mtrl.date);
+
+	return tmp_mtrl;
 }
 
 /**
- * material ã‚’æ•´å½¢ã—ã¦è¡¨ç¤ºã™ã‚‹
- * @param materialæ§‹é€ ä½“ã‚’æ¸¡ã™ã€‚
+ * material ‚ğ®Œ`‚µ‚Ä•\¦‚·‚é
+ * @param material\‘¢‘Ì‚ğ“n‚·B
  */
 void format_material(struct material tmp_mtrl) {
-  printf("------------------------------\n");
-  printf("id:%d\n", tmp_mtrl.id);
-  printf("ãƒ¢ãƒ‡ãƒ«:%s\n", tmp_mtrl.model);
-  printf("å‹å:%s\n", tmp_mtrl.model_name);
-  printf("ç®¡ç†ç•ªå·:%s\n", tmp_mtrl.control_id);
-  printf("è­˜åˆ¥å:%s\n", tmp_mtrl.alias);
-  printf("------------------------------\n");
+	printf("------------------------------\n");
+	printf("id:%d\n", tmp_mtrl.id);
+	printf("ƒ‚ƒfƒ‹:%s\n", tmp_mtrl.model);
+	printf("Œ^–¼:%s\n", tmp_mtrl.model_name);
+	printf("ŠÇ—”Ô†:%s\n", tmp_mtrl.control_id);
+	printf("¯•Ê–¼:%s\n", tmp_mtrl.alias);
+	printf("ó‘Ô:%s\n", tmp_mtrl.status);
+	printf("Œ»İ’n:%s\n", tmp_mtrl.place);
+	printf("Ó”CÒ:%s\n", tmp_mtrl.blame);
+	printf("ÅIXV“ú:%s\n", tmp_mtrl.date);
+	printf("------------------------------\n");
 }
 
 /**
- * materialã‚’åˆæœŸåŒ–ã™ã‚‹ã€‚
- * @param materialã‚’æ¸¡ã™ã€‚
+ * material‚ğ‰Šú‰»‚·‚éB
+ * @param material‚ğ“n‚·B
  */
 void init_material(struct material *mtrl) {
-  mtrl -> id = 0;
-  memset(mtrl -> model		, '\0', sizeof(mtrl -> model));
-  memset(mtrl -> model_name	, '\0', sizeof(mtrl -> model_name));
-  memset(mtrl -> control_id	, '\0', sizeof(mtrl -> control_id));
-  memset(mtrl -> alias		, '\0', sizeof(mtrl -> alias));
-  memset(mtrl -> status		, '\0', sizeof(mtrl -> status));
-  memset(mtrl -> place		, '\0', sizeof(mtrl -> place));
-  memset(mtrl -> blame		, '\0', sizeof(mtrl -> blame));
-  memset(mtrl -> date		, '\0', sizeof(mtrl -> date));
+	mtrl -> id			 = 0;
+	mtrl -> model		 = (char*)malloc(STRING_BUFFER);
+	mtrl -> model_name	 = (char*)malloc(STRING_BUFFER);
+	mtrl -> control_id	 = (char*)malloc(STRING_BUFFER);
+	mtrl -> alias		 = (char*)malloc(STRING_BUFFER);
+	mtrl -> status		 = (char*)malloc(STRING_BUFFER);
+	mtrl -> place		 = (char*)malloc(STRING_BUFFER);
+	mtrl -> blame		 = (char*)malloc(STRING_BUFFER);
+	mtrl -> date		 = (char*)malloc(STRING_BUFFER);
 }
 
 /**
- * MATERIAL_FILEã®1è¡Œã‚’ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Šã§åˆ†è§£ã—ã¦materialæ§‹é€ ä½“ã‚’ç”Ÿæˆã™ã‚‹ã€‚
- * @param char[LINE_BUFFER] 1è¡Œ
- * @return struct material 1è¡Œãƒ‡ãƒ¼ã‚¿ã‹ã‚‰ç”Ÿæˆã—ãŸmaterialæ§‹é€ ä½“
+ * malloc‚µ‚½material‚ğ‰Šú‰»‚·‚éB
+ * @param material‚ğ“n‚·
+ */
+void free_material(struct material *mtrl) {
+	free(mtrl -> model);
+	free(mtrl -> model_name);
+	free(mtrl -> control_id);
+	free(mtrl -> alias);
+	free(mtrl -> status);
+	free(mtrl -> place);
+	free(mtrl -> blame);
+	free(mtrl -> date);
+}
+
+/**
+ * MATERIAL_FILE‚Ì1s‚ğƒJƒ“ƒ}‹æØ‚è‚Å•ª‰ğ‚µ‚Ämaterial\‘¢‘Ì‚ğ¶¬‚·‚éB
+ * @param char[LINE_BUFFER] 1s
+ * @return struct material 1sƒf[ƒ^‚©‚ç¶¬‚µ‚½material\‘¢‘Ì
  */
 struct material line_buf_material(char buf[LINE_BUFFER]) {
-  int place = 0;
-  int place_old = 0;
-  int cnt = 0;
-  int i;
-  char temp_buf[LINE_BUFFER];
-  struct material mtrl_buf;
+	int place = 0;
+	int place_old = 0;
+	int cnt = 0;
+	int i;
+	char temp_buf[LINE_BUFFER];
+	struct material mtrl_buf;
 
-  while((place != -1) && (cnt < MATERIAL_NUM)) {
-	place_old = place;
-	place = cammna_search(buf, place);
+	while((place != -1) && (cnt < MATERIAL_NUM)) {
+		place_old = place;
+		place = cammna_search(buf, place);
 #if DEBUG_PRINT
-	printf("place:%d -> %d\n", place_old, place);
+		printf("place:%d -> %d\n", place_old, place);
 #endif
-	if (place == -1) {
-	  printf("csvãƒ‡ãƒ¼ã‚¿ãŒè¶³ã‚Šã¦ã„ãªã„å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚\n");
-	  printf("%dåˆ—ç›®ã®ãƒ‡ãƒ¼ã‚¿ã‚’è¦‹ç›´ã—ã¦ãã ã•ã„ã€‚\n", (cnt + 1));
-	  break;
-	} else {
-	  memset(temp_buf, '\0', sizeof(temp_buf));
-	  memcpy(temp_buf, &buf[place_old], (place - place_old));
-	  
-	  for (i = 0; i < MATERIAL_NUM; i++) {
-		switch (cnt) {
-		case 0: mtrl_buf.id			= atoi(temp_buf);
-		  break;
-		case 1: mtrl_buf.model		= temp_buf;
-		  break;
-		case 2: mtrl_buf.model_name	= temp_buf;
-		  break;
-		case 3: mtrl_buf.control_id	= temp_buf;
-		  break;
-		case 4: mtrl_buf.alias		= temp_buf;
-		  break;
-		case 5: mtrl_buf.status		= temp_buf;
-		  break;
-		case 6: mtrl_buf.place		= temp_buf;
-		  break;
-		case 7: mtrl_buf.blame		= temp_buf;
-		  break;
-		case 8: mtrl_buf.date		= temp_buf;
-		  break;
-		default :
-		  break;
+		if (place == -1) {
+			printf("csvƒf[ƒ^‚ª‘«‚è‚Ä‚¢‚È‚¢‰Â”\«‚ª‚ ‚è‚Ü‚·B\n");
+			printf("%d—ñ–Ú‚Ìƒf[ƒ^‚ğŒ©’¼‚µ‚Ä‚­‚¾‚³‚¢B\n", (cnt + 1));
+			break;
+		} else {
+			memset(temp_buf, '\0', sizeof(temp_buf));
+			memcpy(temp_buf, &buf[place_old], (place - place_old));
+
+			for (i = 0; i < MATERIAL_NUM; i++) {
+				switch (cnt) {
+					case 0: mtrl_buf.id			= atoi(temp_buf);
+							break;
+					case 1: mtrl_buf.model		= temp_buf;
+							break;
+					case 2: mtrl_buf.model_name	= temp_buf;
+							break;
+					case 3: mtrl_buf.control_id	= temp_buf;
+							break;
+					case 4: mtrl_buf.alias		= temp_buf;
+							break;
+					case 5: mtrl_buf.status		= temp_buf;
+							break;
+					case 6: mtrl_buf.place		= temp_buf;
+							break;
+					case 7: mtrl_buf.blame		= temp_buf;
+							break;
+					case 8: mtrl_buf.date		= temp_buf;
+							break;
+					default :
+							break;
+				}
+			}
+			if (cnt < MATERIAL_NUM){
+				cnt++;
+			}else{
+				printf("MATERIAL_NUM‚ğ’´‚¦‚éƒJƒ“ƒ}‚ª‚ ‚è‚Ü‚µ‚½");
+				break;
+			}
 		}
-	  }
-	  if (cnt < MATERIAL_NUM){
-		cnt++;
-	  }else{
-		printf("MATERIAL_NUMã‚’è¶…ãˆã‚‹ã‚«ãƒ³ãƒãŒã‚ã‚Šã¾ã—ãŸ");
-		break;
-	  }
 	}
-  }
-  return mtrl_buf;
+	return mtrl_buf;
 }

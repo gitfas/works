@@ -1,6 +1,6 @@
 CC =  gcc
 CFLAGS = -Wall
-SUFFIX = -c
+SUFFIX = -c --input-charset=cp932 --exec-charset=cp932
 EXEFILE = gonzo
 
 all : common.c material.c page.c gonzo.c

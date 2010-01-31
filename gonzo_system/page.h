@@ -1,21 +1,21 @@
 /**
  * @file
- * ãƒšãƒ¼ã‚¸å˜ä½å‡¦ç†ãƒ•ã‚¡ã‚¤ãƒ«
+ * ƒy[ƒW’PˆÊˆ—ƒtƒ@ƒCƒ‹
  * @author Arakawa
  * @date last updated : 2009/11/23-02:11:01
  */
 
 /* define */
-#define MENU_TITLE1_NAME "å‚™å“ç®¡ç†ã‚·ã‚¹ãƒ†ãƒ "	 /**< ãƒšãƒ¼ã‚¸ã‚¿ã‚¤ãƒˆãƒ«1 */
-#define MENU_LIST1_NAME1 "å‚™å“ä¸€è¦§"			 /**< ãƒšãƒ¼ã‚¸å1 */
-#define MENU_LIST1_NAME2 "å‚™å“è²¸å‡ºè¨˜éŒ²æ›´æ–°"	 /**< ãƒšãƒ¼ã‚¸å2 */
-#define MENU_LIST1_NAME3 "è²¸å‡ºãƒ­ã‚°"			 /**< ãƒšãƒ¼ã‚¸å3 */
-#define MENU_LIST1_NAME4 "å‚™å“ç™»éŒ²"			 /**< ãƒšãƒ¼ã‚¸å4 */
-#define MENU_LIST1_NAME5 "å‚™å“å‰Šé™¤"			 /**< ãƒšãƒ¼ã‚¸å5 */
-#define MENU_LIST1_NAME6 "å‚™å“ç·¨é›†"			 /**< ãƒšãƒ¼ã‚¸å6 */
+#define MENU_TITLE1_NAME "”õ•iŠÇ—ƒVƒXƒeƒ€"	 /**< ƒy[ƒWƒ^ƒCƒgƒ‹1 */
+#define MENU_LIST1_NAME1 "”õ•iˆê——"			 /**< ƒy[ƒW–¼1 */
+#define MENU_LIST1_NAME2 "”õ•i‘İo‹L˜^XV"	 /**< ƒy[ƒW–¼2 */
+#define MENU_LIST1_NAME3 "‘İoƒƒO"			 /**< ƒy[ƒW–¼3 */
+#define MENU_LIST1_NAME4 "”õ•i“o˜^"			 /**< ƒy[ƒW–¼4 */
+#define MENU_LIST1_NAME5 "”õ•iíœ"			 /**< ƒy[ƒW–¼5 */
+#define MENU_LIST1_NAME6 "”õ•i•ÒW"			 /**< ƒy[ƒW–¼6 */
 
 /**
- * @brief ã‚·ã‚¹ãƒ†ãƒ ãƒšãƒ¼ã‚¸ã®enum
+ * @brief ƒVƒXƒeƒ€ƒy[ƒW‚Ìenum
  */
 enum GONZO_STATUS {
   PAGE_START = 0,
@@ -27,7 +27,7 @@ enum GONZO_STATUS {
   PAGE_EQUIPMENT_EDIT,
 } status;
 
-/* é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ— */
+/* ŠÖ”ƒvƒƒgƒ^ƒCƒv */
 void page_start();
 void page_show_all();
 void page_lend_renew();

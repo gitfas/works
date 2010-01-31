@@ -1,8 +1,8 @@
 /**
  * @file
- * ãƒšãƒ¼ã‚¸å˜ä½å‡¦ç†ãƒ•ã‚¡ã‚¤ãƒ«
+ * ƒy[ƒW’PˆÊˆ—ƒtƒ@ƒCƒ‹
  * @author Arakawa
- * @date last updated : 2009/12/21-01:15:55
+ * @date last updated : 2010/01/31-00:27:28
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,140 +12,143 @@
 #include "page.h"
 
 /**
- * ã‚¹ã‚¿ãƒ¼ãƒˆç”»é¢
+ * ƒXƒ^[ƒg‰æ–Ê
  */
 void page_start() {
-  int num;
-  char page_name[][PRINT_FORMAT_LEN] = {
-	MENU_LIST1_NAME1,
-	MENU_LIST1_NAME2,
-	MENU_LIST1_NAME3,
-	MENU_LIST1_NAME4,
-	MENU_LIST1_NAME5,
-	MENU_LIST1_NAME6
-  }; /**< ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒªã‚¹ãƒˆãƒ†ãƒ¼ãƒ–ãƒ« */
-  
-  /* ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’æ•´å½¢å‡ºåŠ› */
-  format_print_title(MENU_TITLE1_NAME);
-  format_print_menu(page_name, (sizeof(page_name)/sizeof(page_name[0])));
-  format_print_line();
-  
-  common_int_input(&num);
+	int num;
+	char page_name[][PRINT_FORMAT_LEN] = {
+		MENU_LIST1_NAME1,
+		MENU_LIST1_NAME2,
+		MENU_LIST1_NAME3,
+		MENU_LIST1_NAME4,
+		MENU_LIST1_NAME5,
+		MENU_LIST1_NAME6
+	}; /**< ƒƒjƒ…[ƒŠƒXƒgƒe[ƒuƒ‹ */
 
-  switch (num) {
-  case 1:
-    status = PAGE_SHOW_ALL;
-    break;
-  case 2:
-    status = PAGE_LEND_RENEW;
-    break;
-  case 3:
-    status = PAGE_LEND_LOG;
-    break;
-  case 4:
-    status = PAGE_EQUIPMENT_REGIST;
-    break;
-  case 5:
-    status = PAGE_EQUIPMENT_DELETE;
-    break;
-  case 6:
-    status = PAGE_EQUIPMENT_EDIT;
-    break;
-  default :
-    break;
-  }
+	/* ƒƒjƒ…[‚ğ®Œ`o—Í */
+	format_print_title(MENU_TITLE1_NAME);
+	format_print_menu(page_name, (sizeof(page_name)/sizeof(page_name[0])));
+	format_print_line();
 
-  if ((num > 0) && (num <= (sizeof(page_name)/sizeof(page_name[0])))) {
-	printf("[%s] ã‚’é¸æŠ\n", &page_name[num - 1][0]);
-  } else {
-    printf("1-6ä»¥å¤–ã®ç•ªå·ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã™\n");
-  }
+	common_int_input(&num);
+
+	switch (num) {
+		case 1:
+			status = PAGE_SHOW_ALL;
+			break;
+		case 2:
+			status = PAGE_LEND_RENEW;
+			break;
+		case 3:
+			status = PAGE_LEND_LOG;
+			break;
+		case 4:
+			status = PAGE_EQUIPMENT_REGIST;
+			break;
+		case 5:
+			status = PAGE_EQUIPMENT_DELETE;
+			break;
+		case 6:
+			status = PAGE_EQUIPMENT_EDIT;
+			break;
+		default :
+			break;
+	}
+
+	if ((num > 0) && (num <= (sizeof(page_name)/sizeof(page_name[0])))) {
+		printf("[%s] ‚ğ‘I‘ğ\n", &page_name[num - 1][0]);
+	} else {
+		printf("1-6ˆÈŠO‚Ì”Ô†‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚·\n");
+	}
 }
 
 /**
- * æ©Ÿæä¸€è¦§
+ * ‹@Şˆê——
  */
 void page_show_all() {
-  // å®šç¾©ã€åˆæœŸåŒ–
-  int cnt;
+	// ’è‹`A‰Šú‰»
+	int cnt;
 
-  printf("æ©Ÿæä¸€è¦§ã‚’è¡¨ç¤ºã—ã¾ã™\n");
-  printf("|ãƒ¢ãƒ‡ãƒ«   | å‹å     | ç®¡ç†ç•ªå· | è­˜åˆ¥å | å‚™è€ƒ     | ãã®ä»–   |\n");
-  printf("----------------------------------------------------------------\n");
-  
-  // è¿”ã‚Šå€¤ã«æ§‹é€ ä½“ã®é•·ã•ã‚’è¿”ã™
-  cnt = material_file_read();
-  printf("cnt : %d\n", cnt);
-  cnt = EXIT_FAILURE;
+	printf("‹@Şˆê——‚ğ•\¦‚µ‚Ü‚·\n");
+	printf("|ƒ‚ƒfƒ‹   | Œ^–¼     | ŠÇ—”Ô† | ¯•Ê–¼ | ”õl     | ‚»‚Ì‘¼   |\n");
+	printf("----------------------------------------------------------------\n");
 
-  printf("%d", EXIT_FAILURE);
-  // ãƒ¡ãƒ¢ãƒªã®ç¢ºä¿ã«å¤±æ•—ã—ãŸå ´åˆ
-  if (cnt == EXIT_FAILURE) {
-    printf("å¼·åˆ¶çµ‚äº†\n");
-    status = PAGE_START;
-    return;
-  }
-  
-  printf("\n");
-  free(mtrl_ptr);
-  status = PAGE_START;
+	// •Ô‚è’l‚É\‘¢‘Ì‚Ì’·‚³‚ğ•Ô‚·
+	cnt = material_file_read();
+	printf("cnt : %d\n", cnt);
+	cnt = EXIT_FAILURE;
+
+	printf("%d", EXIT_FAILURE);
+	// ƒƒ‚ƒŠ‚ÌŠm•Û‚É¸”s‚µ‚½ê‡
+	if (cnt == EXIT_FAILURE) {
+		printf("‹­§I—¹\n");
+		status = PAGE_START;
+		return;
+	}
+
+	printf("\n");
+	free(mtrl_ptr);
+	status = PAGE_START;
 }
 
 /**
- * å‚™å“è²¸å‡ºè¨˜éŒ²æ›´æ–°
+ * ”õ•i‘İo‹L˜^XV
  */
 void page_lend_renew() {
-  printf("å‚™å“ã®çŠ¶æ…‹ã‚’æ›´æ–°ã—ã¾ã™\n");
-  printf("\nã“ã“ã§å‚™å“ä¸€è¦§è¡¨ç¤º\n\n");
-  printf("ã©ã®æ©Ÿæã®è¨˜éŒ²ã‚’æ›´æ–°ã—ã¾ã™ã‹ï¼Ÿ\n");
-  
-  int input;
-  scanf("ID:%d", &input);
-  printf("id %d ã®æ©Ÿæã®è¨˜éŒ²ã‚’æ›´æ–°ã—ã¾ã™\n", input);
-  
-  status = PAGE_START;
+	printf("”õ•i‚Ìó‘Ô‚ğXV‚µ‚Ü‚·\n");
+	printf("\n‚±‚±‚Å”õ•iˆê——•\¦\n\n");
+	printf("‚Ç‚Ì‹@Ş‚Ì‹L˜^‚ğXV‚µ‚Ü‚·‚©H\n");
+
+	int input;
+	scanf("ID:%d", &input);
+	printf("id %d ‚Ì‹@Ş‚Ì‹L˜^‚ğXV‚µ‚Ü‚·\n", input);
+
+	status = PAGE_START;
 }
 
 /**
- * è²¸å‡ºãƒ­ã‚°
+ * ‘İoƒƒO
  */
 void page_lend_log() {
-  printf("è²¸å‡ºãƒ­ã‚°");
-  status = PAGE_START;
+	printf("‘İoƒƒO");
+	status = PAGE_START;
 }
 
 /**
- * å‚™å“ç™»éŒ²
+ * ”õ•i“o˜^
  */
 void page_equipment_regist() {
-  // å®šç¾©ã€åˆæœŸåŒ–
-  struct material regist;
+	// ’è‹`A‰Šú‰»
+	struct material regist;
 
-  printf("å‚™å“ç™»éŒ²\n");
-  // å…¥åŠ›å—ä»˜
-  regist = input_material();
-  // æ•´å½¢è¡¨ç¤º
-  format_material(regist);
-  // yes/no
-  if (query_ok_ng() == TRUE) {
-	// ãƒ•ã‚¡ã‚¤ãƒ«ã¸æ›¸ãè¾¼ã¿
-  }
-  
-  status = PAGE_START;
+	printf("”õ•i“o˜^\n");
+	// “ü—Íó•t
+	regist = input_material();
+	// ®Œ`•\¦
+	format_material(regist);
+	// yes/no
+	if (query_ok_ng() == TRUE) {
+		// ƒtƒ@ƒCƒ‹‚Ö‘‚«‚İ
+		printf("file write");
+	}
+
+	// malloc‚µ‚Ä‚¢‚é•”•ª‚ÌŠJ•ú
+	free_material(&regist);
+	status = PAGE_START;
 }
 
 /**
- * å‚™å“å‰Šé™¤
+ * ”õ•iíœ
  */
 void page_equipment_delete() {
-  printf("å‚™å“å‰Šé™¤");
-  status = PAGE_START;
+	printf("”õ•iíœ");
+	status = PAGE_START;
 }
 
 /**
- * å‚™å“ç·¨é›†
-V */
+ * ”õ•i•ÒW
+ */
 void page_equipment_edit() {
-  printf("å‚™å“ç·¨é›†");
-  status = PAGE_START;
+	printf("”õ•i•ÒW");
+	status = PAGE_START;
 }

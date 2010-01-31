@@ -1,8 +1,8 @@
 /**
  * @file
- * å…±é€šé–¢æ•°ãƒ•ã‚¡ã‚¤ãƒ«
+ * ‹¤’ÊŠÖ”ƒtƒ@ƒCƒ‹
  * @author Arakawa
- * @date last updated : 2010/01/10-17:28:10
+ * @date last updated : 2010/01/30-23:59:57
  */
 
 #include <stdio.h>
@@ -13,8 +13,8 @@
 
 
 /**
- * ã‚¿ã‚¤ãƒˆãƒ«æ–‡å­—åˆ—ã‚’æ•´å½¢å‡ºåŠ›ã™ã‚‹(ãƒ†ã‚­ã‚¹ãƒˆ)
- * @param char* string ã‚¿ã‚¤ãƒˆãƒ«æ–‡å­—åˆ—
+ * ƒ^ƒCƒgƒ‹•¶š—ñ‚ğ®Œ`o—Í‚·‚é(ƒeƒLƒXƒg)
+ * @param char* string ƒ^ƒCƒgƒ‹•¶š—ñ
  */
 void format_print_title(char string[PRINT_FORMAT_LEN]) {
 	int i;
@@ -27,14 +27,14 @@ void format_print_title(char string[PRINT_FORMAT_LEN]) {
 }
 
 /**
- * ãƒ¡ãƒ‹ãƒ¥ãƒ¼æ–‡å­—åˆ—ã‚’æ•´å½¢å‡ºåŠ›ã™ã‚‹(ãƒ†ã‚­ã‚¹ãƒˆ)
- * @param char string[][PRINT_FORMAT_LEN] ãƒ¡ãƒ‹ãƒ¥ãƒ¼æ–‡å­—åˆ—
- * @param int cnt ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æ•°
+ * ƒƒjƒ…[•¶š—ñ‚ğ®Œ`o—Í‚·‚é(ƒeƒLƒXƒg)
+ * @param char string[][PRINT_FORMAT_LEN] ƒƒjƒ…[•¶š—ñ
+ * @param int cnt ƒƒjƒ…[‚Ì”
  */
 void format_print_menu(char string[][PRINT_FORMAT_LEN], int cnt) {
 	int i,j;
-#if DEBUG_PRINT
-	printf("ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æ•°:%d\n", cnt);
+#ifdef DEBUG_PRINT
+	printf("ƒƒjƒ…[‚Ì”:%d\n", cnt);
 #endif
 
 	for(i = 0; i < cnt; i++) {
@@ -47,11 +47,11 @@ void format_print_menu(char string[][PRINT_FORMAT_LEN], int cnt) {
 }
 
 /**
- * æ•´å½¢å‡ºåŠ›ã®ãƒ©ã‚¤ãƒ³ã‚’å‡ºåŠ›ã™ã‚‹(ãƒ†ã‚­ã‚¹ãƒˆ)
+ * ®Œ`o—Í‚Ìƒ‰ƒCƒ“‚ğo—Í‚·‚é(ƒeƒLƒXƒg)
  */
 void format_print_line() {
 	int i;
-	
+
 	printf("  +");
 	for(i = 0; i < PRINT_FORMAT_LEN + 1; i++) {
 		printf("-");
@@ -60,27 +60,29 @@ void format_print_line() {
 }
 
 /**
- * mallocã§ã‚¨ãƒ©ãƒ¼ãŒå‡ºãŸå ´åˆã®æ–‡å­—åˆ—ã‚’å‡ºåŠ›ã™ã‚‹ã€‚
- * @param é–¢æ•°åã‚’æ¸¡ã™ã€‚
- * @return int EXIT_FAILUREã‚’è¿”ã™ã€‚
+ * malloc‚ÅƒGƒ‰[‚ªo‚½ê‡‚Ì•¶š—ñ‚ğo—Í‚·‚éB
+ * @param ŠÖ”–¼‚ğ“n‚·B
+ * @return int EXIT_FAILURE‚ğ•Ô‚·B
  */
 int error_malloc(char *string) {
-	printf("%så†…ã§ãƒ¡ãƒ¢ãƒªç¢ºä¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚\n", string);
+	printf("%s“à‚Åƒƒ‚ƒŠŠm•Û‚É¸”s‚µ‚Ü‚µ‚½B\n", string);
 	return EXIT_FAILURE;
 }
 
 /**
- * æ–‡å­—åˆ—ã‹ã‚‰ã€ã‚«ãƒ³ãƒï¼ˆï¼Œï¼‰ã®ä½ç½®ã‚’æ¤œç´¢ã™ã‚‹ã€‚
- * @param æ–‡å­—åˆ—ã‚’æ¸¡ã™ã€‚
- * @retval int ã‚«ãƒ³ãƒãŒã‚ã£ãŸä½ç½®ã‚’è¿”ã™ã€‚
- * @retval 0 ã‚«ãƒ³ãƒãŒè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã«è¿”ã™ã€‚
+ * •¶š—ñ‚©‚çAƒJƒ“ƒ}iCj‚ÌˆÊ’u‚ğŒŸõ‚·‚éB
+ * @param •¶š—ñ‚ğ“n‚·B
+ * @retval int ƒJƒ“ƒ}‚ª‚ ‚Á‚½ˆÊ’u‚ğ•Ô‚·B
+ * @retval 0 ƒJƒ“ƒ}‚ªŒ©‚Â‚©‚ç‚È‚¢ê‡‚É•Ô‚·B
  */
 int cammna_search(char *str, int now) {
 	char *comma = ",";
 	char *place;
-	
+
 	place = strstr((str + now), comma);
-	//printf("'%s'ã®ä¸­ã«ç¾ã‚Œã‚‹'%s'ã¨ã„ã†æ–‡å­—åˆ—ã¯%dæ–‡å­—ç›®ã«ã‚ã‚‹.\n", str, comma, place - str + 1);
+#ifdef DEBUG_PRINT
+	printf("'%s'‚Ì’†‚ÉŒ»‚ê‚é'%s'‚Æ‚¢‚¤•¶š—ñ‚Í%d•¶š–Ú‚É‚ ‚é.\n", str, comma, place - str + 1);
+#endif
 	if (place == NULL) {
 		return -1;
 	} else {
@@ -89,111 +91,150 @@ int cammna_search(char *str, int now) {
 }
 
 /**
- * UTF-8ã®æ–‡å­—åˆ—ã®æ–‡å­—æ•°ã‚’ã‚«ã‚¦ãƒ³ãƒˆã™ã‚‹ã€‚
- * @param UTF-8ã®æ–‡å­—åˆ—ã‚’æ¸¡ã™ã€‚
- * @return int ã‚«ã‚¦ãƒ³ãƒˆã—ãŸæ–‡å­—æ•°ã‚’è¿”ã™ã€‚
+ * UTF-8‚Ì•¶š—ñ‚Ì•¶š”‚ğƒJƒEƒ“ƒg‚·‚éB
+ * @param UTF-8‚Ì•¶š—ñ‚ğ“n‚·B
+ * @return int ƒJƒEƒ“ƒg‚µ‚½•¶š”‚ğ•Ô‚·B
  */
 int count_UTF8(const unsigned char *string) {
 	int len = 0;
-	
+
 	while(*string) {
 		if (*string < 0x1f || *string == 0x7f) {
-			//åˆ¶å¾¡ã‚³ãƒ¼ãƒ‰
+			//§ŒäƒR[ƒh
 		} else if (*string <= 0x7f) {
-			++len; // 1ãƒã‚¤ãƒˆæ–‡å­—
+			++len; // 1ƒoƒCƒg•¶š
 		} else if (*string <= 0xbf) {
-			// æ–‡å­—ã®ç¶šã
+			// •¶š‚Ì‘±‚«
 		} else if (*string <= 0xdf) {
-			++len; // 2ãƒã‚¤ãƒˆæ–‡å­—
+			++len; // 2ƒoƒCƒg•¶š
 		} else if (*string <= 0xef) {
-			++len; // 3ãƒã‚¤ãƒˆæ–‡å­—
+			++len; // 3ƒoƒCƒg•¶š
 		} else if (*string <= 0xf7) {
-			++len; // 4ãƒã‚¤ãƒˆæ–‡å­—
+			++len; // 4ƒoƒCƒg•¶š
 		} else if (*string <= 0xfb) {
-			++len; // 5ãƒã‚¤ãƒˆæ–‡å­—
+			++len; // 5ƒoƒCƒg•¶š
 		} else if (*string <= 0xfd) {
-			++len; // 6ãƒã‚¤ãƒˆæ–‡å­—
+			++len; // 6ƒoƒCƒg•¶š
 		} else {
-			// ä½¿ã‚ã‚Œã¦ã„ãªã„
+			// g‚í‚ê‚Ä‚¢‚È‚¢
 		}
 		string++;
 	}
-	
+
 	return len;
 }
 
 /**
- * yes/no ã‚’å…¥åŠ›ã•ã›ã€True/Falseã‚’è¿”ã™ã€‚
- * @retval TRUE "Y","y"ã‚’å…¥åŠ›ã—ãŸå ´åˆã«è¿”ã™ã€‚
- * @retval FALSE "N","n"ã‚’å…¥åŠ›ã—ãŸå ´åˆã«è¿”ã™ã€‚
+ * Shift-JIS‚Ì•¶š—ñ‚Ì•¶š”‚ğƒJƒEƒ“ƒg‚·‚éB
+ * @param Shift-JIS‚Ì•¶š—ñ‚ğ“n‚·B
+ * @return int ƒJƒEƒ“ƒg‚µ‚½•¶š”‚ğ•Ô‚·B
  */
-int query_ok_ng() {
-	// å®šç¾©ã€åˆæœŸåŒ–
-	int c;
-	int flag;
+int count_Shift_JIS(const unsigned char *string)
+{
+	int len = 0;
 
-	printf("ä»¥ä¸Šã®ç™»éŒ²å†…å®¹ã§ã‚ˆã‚ã—ã„ã§ã™ã‹ã€‚Y/N:");
-	while((c = getchar()) != EOF) {
-	  switch(c) {
-	  case YES:
-	  case yes:
-		  flag = TRUE;
-		  goto LOOP_OUT;
-	  case NO:
-	  case no:
-		  return FALSE;
-		  goto LOOP_OUT;
-	  default:
-		  printf("Y/N ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚\n");
-	  }
+	while (*string) {
+		if (*string < 0x1f || *string == 0x7f) {
+			// §Œä•¶š
+		} else if ((0x81 <= *string && *string <= 0x9F) || (0xE0 <= *string && *string <= 0xFC)) {
+			// 2ƒoƒCƒg•¶š
+			++string;
+			if ((0x40 <= *string && *string <= 0x7E) || (0x80 <= *string && *string <= 0xFC)) {
+				++len;
+			} else {
+				break; // •s–¾‚È•¶š
+			}
+		} else {
+			// 1ƒoƒCƒg•¶š
+			if(0x80 < *string)
+			// ”¼ŠpƒJƒi
+			++len;
+		}
+		++string;
 	}
-LOOP_OUT:
-	return flag;
+
+	return len;
 }
 
 /**
- * æ•´æ•°ã®å…¥åŠ›å—ä»˜ã‚’è¡Œã†ã€‚
- * @param int* å…¥åŠ›ã‚’æ ¼ç´ã™ã‚‹ãƒã‚¤ãƒ³ã‚¿
+ * yes/no ‚ğ“ü—Í‚³‚¹ATrue/False‚ğ•Ô‚·B
+ * @retval TRUE "Y","y"‚ğ“ü—Í‚µ‚½ê‡‚É•Ô‚·B
+ * @retval FALSE "N","n"‚ğ“ü—Í‚µ‚½ê‡‚É•Ô‚·B
+ */
+int query_ok_ng() {
+	// ’è‹`A‰Šú‰»
+	int		c;
+	int		flag;
+	int		result;
+
+	printf("ˆÈã‚Ì“o˜^“à—e‚Å‚æ‚ë‚µ‚¢‚Å‚·‚©BY/N:");
+	while((c = getchar()) != EOF) {
+		switch(c) {
+			case YES:
+			case yes:
+				flag = TRUE;
+				result = TRUE;
+				break;
+			case NO:
+			case no:
+				flag = TRUE;
+				result = TRUE;
+				break;
+			default:
+				printf("Y/N ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
+				break;
+		}
+		if (flag == TRUE) {
+			break;
+		}
+	}
+	return result;
+}
+
+/**
+ * ®”‚Ì“ü—Íó•t‚ğs‚¤B
+ * @param int* “ü—Í‚ğŠi”[‚·‚éƒ|ƒCƒ“ƒ^
  */
 void common_int_input(int* num) {
-	/* å®šç¾©ã€åˆæœŸåŒ– */
-	char input[256];
-	int flag;
+	/* ’è‹`A‰Šú‰» */
+	char	input[256];
+	int		flag;
 	flag = FALSE;
-	
-	printf("å…¥åŠ›å—ä»˜[æ•´æ•°]ï¼š");
+
+	printf("“ü—Íó•t[®”]F");
 	fgets(input, sizeof(input), stdin);
 	fflush(stdin);
-	
+
 	*num = atoi(input);
 }
 
 /**
- * æ–‡å­—åˆ—ã®å…¥åŠ›å—ä»˜ã‚’è¡Œã†ã€‚
- * 255ãƒã‚¤ãƒˆã¾ã§å…¥åŠ›å¯èƒ½ã€‚
- * @param char* å…¥åŠ›ã‚’æ ¼ç´ã™ã‚‹ãƒã‚¤ãƒ³ã‚¿
+ * •¶š—ñ‚Ì“ü—Íó•t‚ğs‚¤B
+ * 255ƒoƒCƒg‚Ü‚Å“ü—Í‰Â”\B
+ * @param char* “ü—Í‚ğŠi”[‚·‚éƒ|ƒCƒ“ƒ^
  */
 void common_string_input(char* string) {
-	/* å®šç¾©ã€åˆæœŸåŒ– */
-	/* æ›¸ãã‹ã‘ã€ã€€å…¥åŠ›ã‚’å—ã‘å–ã£ãŸå¾Œã®ã‚¨ãƒ©ãƒ¼å‡¦ç†ãŒã¾ã Aã€‚*/
-	char input[256];
-	int flag, cnt;
+	/* ’è‹`A‰Šú‰» */
+	/* ‘‚«‚©‚¯A“ü—Í‚ğó‚¯æ‚Á‚½Œã‚ÌƒGƒ‰[ˆ—‚ª‚Ü‚¾AB*/
+	char	input[STRING_BUFFER];
+	int		flag;
+	int		cnt;
 	flag = FALSE;
-	
-	printf("å…¥åŠ›å—ä»˜[æ–‡å­—åˆ—]ï¼š");
+
+	printf("“ü—Íó•t[•¶š—ñ]F");
 	fgets(input, sizeof(input), stdin);
 	fflush(stdin);
-	
+
 	if (input[256 - 2] != '\0') {
 		cnt = 256 - 2;
 		while (1) {
 			if (input[cnt] <= 0x7f) {
-				break; // 1ãƒã‚¤ãƒˆæ–‡å­—,åˆ¶å¾¡ã‚³ãƒ¼ãƒ‰
+				break; // 1ƒoƒCƒg•¶š,§ŒäƒR[ƒh
 			} else if (input[cnt] <= 0xbf) {
 				input[cnt--] = '\0';
 			} else if (input[cnt] <= 0xfd) {
 				input[cnt--] = '\0';
-				break; // 2-6ãƒã‚¤ãƒˆæ–‡å­—
+				break; // 2-6ƒoƒCƒg•¶š
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 /**
  * @file
- * ãƒ¡ã‚¤ãƒ³å‡¦ç†ãƒ•ã‚¡ã‚¤ãƒ«
+ * ƒƒCƒ“ˆ—ƒtƒ@ƒCƒ‹
  * @author Arakawa
  * @date Last Change:2010/01/11 00:36:08.
  */
@@ -10,8 +10,8 @@
 #include "page.h"
 
 /**
- * ãƒ¡ã‚¤ãƒ³å‡¦ç†
- * @return int å‡¦ç†çµæœã‚’è¿”ã™ã€‚
+ * ƒƒCƒ“ˆ—
+ * @return int ˆ—Œ‹‰Ê‚ğ•Ô‚·B
  */
 int main () {
   int while_flag = TRUE;
@@ -50,7 +50,7 @@ int main () {
 }
 
 /**
- * åˆæœŸåŒ–
+ * ‰Šú‰»
  */
 static void init() {
   status = PAGE_START;

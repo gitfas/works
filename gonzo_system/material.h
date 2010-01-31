@@ -1,34 +1,34 @@
 /**
  * @file
- * material.c ã®ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«
+ * material.c ‚Ìƒwƒbƒ_[ƒtƒ@ƒCƒ‹
  * @author Arakawa
  * @date last updated : 2009/11/23-18:09:07
  */
 
 /* define */
-#define MATERIAL_FILE "abc.txt"		 /**< æ©Ÿæç®¡ç†æƒ…å ±ãƒ•ã‚¡ã‚¤ãƒ« */
+#define MATERIAL_FILE "abc.txt"		 /**< ‹@ŞŠÇ—î•ñƒtƒ@ƒCƒ‹ */
 
 /* static */
-static struct material *mtrl_ptr;	 /**< ä¿ç®¡ãƒ‡ãƒ¼ã‚¿ */
+static struct material *mtrl_ptr;	 /**< •ÛŠÇƒf[ƒ^ */
 
 /**
  * @struct material
- * æ©Ÿæç®¡ç†æƒ…å ±æƒ…å ±
+ * ‹@ŞŠÇ—î•ñî•ñ
  */
 struct material{
-  int  id;				 /**< ãƒ¦ãƒ‹ãƒ¼ã‚¯ãªãƒãƒ†ãƒªã‚¢ãƒ«ID */
-  char *model;			 /**< ãƒ¢ãƒ‡ãƒ«ã‚³ãƒ¼ãƒ‰ */
-  char *model_name;		 /**< ãƒ¢ãƒ‡ãƒ«ã®åå‰ */
-  char *control_id;		 /**< ç®¡ç†ç•ªå· */
-  char *alias;			 /**< ãƒ¢ãƒ‡ãƒ«ã®åˆ¥å */
-  char *status;			 /**< çŠ¶æ…‹ */
-  char *place;			 /**< ç¾åœ¨åœ° */
-  char *blame;			 /**< è²¬ä»»è€… */
-  char *date;			 /**< æœ€çµ‚æ›´æ–°æ—¥æ™‚ */
+  int  id;				 /**< ƒ†ƒj[ƒN‚Èƒ}ƒeƒŠƒAƒ‹ID */
+  char *model;			 /**< ƒ‚ƒfƒ‹ƒR[ƒh */
+  char *model_name;		 /**< ƒ‚ƒfƒ‹‚Ì–¼‘O */
+  char *control_id;		 /**< ŠÇ—”Ô† */
+  char *alias;			 /**< ƒ‚ƒfƒ‹‚Ì•Ê–¼ */
+  char *status;			 /**< ó‘Ô */
+  char *place;			 /**< Œ»İ’n */
+  char *blame;			 /**< Ó”CÒ */
+  char *date;			 /**< ÅIXV“ú */
 };
-#define MATERIAL_NUM 9	 /**< materialæ§‹é€ ä½“ã®è¦ç´ æ•° */
+#define MATERIAL_NUM 9	 /**< material\‘¢‘Ì‚Ì—v‘f” */
 
-/* é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ */
+/* ŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ */
 int material_file_read(void);
 int material_file_write_add(struct material);
 void format_material(struct material);
@@ -36,4 +36,5 @@ struct material input_material();
 int* gen_int();
 char* gen_char();
 void init_material(struct material*);
+void free_material(struct material*);
 struct material line_buf_material(char*);
